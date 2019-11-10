@@ -11,6 +11,8 @@ You are not allowed to clone this app with intentions to redistribute this appli
 https://akidagain.page.link/privacy
 
 # Download Link
+This will redirect you to the IOS App Store.
+
 https://akidagain.page.link/download
 
 
