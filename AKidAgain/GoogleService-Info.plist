@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>908063988771-1gab9dskftkmdcu0uar4rl1bb4ostlgf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.908063988771-1gab9dskftkmdcu0uar4rl1bb4ostlgf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCr74fkl1sLB-Gfem_z-LfAOfEtBk_LTSs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>908063988771</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.NotChewy1324.AKidAgain</string>
+	<key>PROJECT_ID</key>
+	<string>a-kid-again-49800</string>
+	<key>STORAGE_BUCKET</key>
+	<string>a-kid-again-49800.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:908063988771:ios:34ac5f8b53c295dc</string>
+	<key>DATABASE_URL</key>
+	<string>https://a-kid-again-49800.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-1485558513480386~2062237588</string>
+</dict>
+</plist>
