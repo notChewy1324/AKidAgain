@@ -6,7 +6,7 @@ https://akidagain.page.link/home
 
 # Copyright Information
 
-You are not allowed to clone this app with intentions to redistribute this application. You may view and give suggestions to code.
+You are not allowed to clone this app with intentions to redistribute this application. You may view and give suggestions to code. I have released this app for debuging by the community. Any user found exploiting this project will be terminated and I will shut down the open link.
 
 https://akidagain.page.link/privacy
 
