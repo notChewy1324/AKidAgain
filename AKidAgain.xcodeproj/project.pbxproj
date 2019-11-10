@@ -27,10 +27,6 @@
 		F7A8000A2337E3B900730C75 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800042337E3B900730C75 /* AdSupport.framework */; };
 		F7A8000D2337E3B900730C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800072337E3B900730C75 /* AVFoundation.framework */; };
 		F7A8000F2337E3B900730C75 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800092337E3B900730C75 /* AudioToolbox.framework */; };
-		F7A800142337E3C600730C75 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800102337E3C600730C75 /* GoogleMobileAds.framework */; };
-		F7A800162337E3C600730C75 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800112337E3C600730C75 /* nanopb.framework */; };
-		F7A800182337E3C600730C75 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800122337E3C600730C75 /* GoogleUtilities.framework */; };
-		F7A8001A2337E3C600730C75 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800132337E3C600730C75 /* GoogleAppMeasurement.framework */; };
 		F7D4D7F82341427300723D33 /* PhiladelphiaChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4D7F72341427300723D33 /* PhiladelphiaChapterViewController.swift */; };
 		F7D7FBA6233EC48E006D7BA1 /* OpenSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7FBA5233EC48E006D7BA1 /* OpenSceneViewController.swift */; };
 		F7D7FBA8233EC4C3006D7BA1 /* AppBlockerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7FBA7233EC4C3006D7BA1 /* AppBlockerViewController.swift */; };
@@ -160,14 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7E5FA60233D8C55000C7C4C /* Pods_AKidAgain.framework in Frameworks */,
-				F7A8001A2337E3C600730C75 /* GoogleAppMeasurement.framework in Frameworks */,
-				F7A800142337E3C600730C75 /* GoogleMobileAds.framework in Frameworks */,
 				F7A8000D2337E3B900730C75 /* AVFoundation.framework in Frameworks */,
-				F7A800162337E3C600730C75 /* nanopb.framework in Frameworks */,
 				F7A8000A2337E3B900730C75 /* AdSupport.framework in Frameworks */,
 				F7068A482344184D00FAB6CC /* CoreAudio.framework in Frameworks */,
 				F7A8000F2337E3B900730C75 /* AudioToolbox.framework in Frameworks */,
-				F7A800182337E3C600730C75 /* GoogleUtilities.framework in Frameworks */,
 				F7A0BC3C233F9E8200CCD923 /* AVKit.framework in Frameworks */,
 				F7068A472344184D00FAB6CC /* CoreAudioKit.framework in Frameworks */,
 			);
