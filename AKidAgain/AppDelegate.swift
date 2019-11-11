@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import GoogleMobileAds
 import CoreData
 import Firebase
 import FirebaseMessaging
@@ -21,12 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool  {
-
+            
+            //Firebase
             FirebaseApp.configure()
-        
-            // Initialize the Google Mobile Ads SDK.
-            GADMobileAds.sharedInstance().start(completionHandler: nil)
-
         
                 // Notifications
                 UNUserNotificationCenter.current().delegate = self as? UNUserNotificationCenterDelegate

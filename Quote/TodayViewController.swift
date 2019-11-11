@@ -15,7 +15,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //FirebaseApp.configure()
+        FirebaseApp.configure()
+        setupRemoteConfigDefaults()
+        fecthRemoteConfig()
+        updateViewWithRCValues()
     }
 
     //remote-config
@@ -28,7 +31,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     func setupRemoteConfigDefaults(){
         let defaultValues = [
-            "DailyQuoteText" : "“You know you’re in love when you can’t fall asleep because reality is finally better than your dreams.” -Dr. Suess" as NSObject
+            "DailyQuoteText" : "“The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.” – Mark Caine" as NSObject
         ]
         RemoteConfig.remoteConfig().setDefaults(defaultValues)
     }
