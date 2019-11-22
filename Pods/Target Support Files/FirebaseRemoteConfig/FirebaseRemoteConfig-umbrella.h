@@ -10,7 +10,9 @@
 #endif
 #endif
 
+#import "FirebaseRemoteConfig 2.h"
 #import "FirebaseRemoteConfig.h"
+#import "FIRRemoteConfig 2.h"
 #import "FIRRemoteConfig.h"
 
 FOUNDATION_EXPORT double FirebaseRemoteConfigVersionNumber;

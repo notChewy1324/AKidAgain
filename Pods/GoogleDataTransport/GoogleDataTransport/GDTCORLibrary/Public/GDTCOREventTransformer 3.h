@@ -14,21 +14,24 @@
  * limitations under the License.
  */
 
-#import <GoogleDataTransport/GDTCORRegistrar.h>
+#import <Foundation/Foundation.h>
 
-@interface GDTCORRegistrar ()
+@class GDTCOREvent;
 
 NS_ASSUME_NONNULL_BEGIN
 
-/** The concurrent queue on which all registration occurs. */
-@property(nonatomic, readonly) dispatch_queue_t registrarQueue;
+/** Defines the API that event transformers must adopt. */
+@protocol GDTCOREventTransformer <NSObject>
 
-/** A map of targets to backend implementations. */
-@property(atomic, readonly) NSMutableDictionary<NSNumber *, id<GDTCORUploader>> *targetToUploader;
+@required
 
-/** A map of targets to prioritizer implementations. */
-@property(atomic, readonly)
-    NSMutableDictionary<NSNumber *, id<GDTCORPrioritizer>> *targetToPrioritizer;
+/** Transforms an event by applying some logic to it. Events returned can be nil, for example, in
+ *  instances where the event should be sampled.
+ *
+ * @param event The event to transform.
+ * @return A transformed event, or nil if the transformation dropped the event.
+ */
+- (nullable GDTCOREvent *)transform:(GDTCOREvent *)event;
 
 @end
 
