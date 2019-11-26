@@ -24,7 +24,6 @@
 		F7A0BC40233FA0E100CCD923 /* DonovanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0BC3D233FA0E000CCD923 /* DonovanViewController.swift */; };
 		F7A0BC41233FA0E100CCD923 /* GrantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0BC3E233FA0E000CCD923 /* GrantViewController.swift */; };
 		F7A0BC42233FA0E100CCD923 /* MelodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0BC3F233FA0E100CCD923 /* MelodyViewController.swift */; };
-		F7A8000A2337E3B900730C75 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800042337E3B900730C75 /* AdSupport.framework */; };
 		F7A8000D2337E3B900730C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800072337E3B900730C75 /* AVFoundation.framework */; };
 		F7A8000F2337E3B900730C75 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800092337E3B900730C75 /* AudioToolbox.framework */; };
 		F7D4D7F82341427300723D33 /* PhiladelphiaChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4D7F72341427300723D33 /* PhiladelphiaChapterViewController.swift */; };
@@ -157,7 +156,6 @@
 			files = (
 				F7E5FA60233D8C55000C7C4C /* Pods_AKidAgain.framework in Frameworks */,
 				F7A8000D2337E3B900730C75 /* AVFoundation.framework in Frameworks */,
-				F7A8000A2337E3B900730C75 /* AdSupport.framework in Frameworks */,
 				F7068A482344184D00FAB6CC /* CoreAudio.framework in Frameworks */,
 				F7A8000F2337E3B900730C75 /* AudioToolbox.framework in Frameworks */,
 				F7A0BC3C233F9E8200CCD923 /* AVKit.framework in Frameworks */,
