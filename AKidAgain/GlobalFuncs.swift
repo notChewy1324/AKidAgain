@@ -20,6 +20,5 @@ func ClickSound(){
         audioPLayer = try AVAudioPlayer(contentsOf: url)
         audioPLayer?.play()
     } catch {
-        // couldn't load file :(
     }
 }
