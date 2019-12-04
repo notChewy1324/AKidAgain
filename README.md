@@ -15,4 +15,6 @@ This will redirect you to the IOS App Store.
 
 https://akidagain.page.link/download
 
+# Version Infromation
 
+This is app version is made for devices that run on the IOS App Store.
