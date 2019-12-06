@@ -1,7 +1,7 @@
 PODS:
-  - Crashlytics (3.10.9):
-    - Fabric (~> 1.7.13)
-  - Fabric (1.7.13)
+  - Crashlytics (3.14.0):
+    - Fabric (~> 1.10.2)
+  - Fabric (1.10.2)
   - Firebase (6.13.0):
     - Firebase/Core (= 6.13.0)
   - Firebase/AdMob (6.13.0):
@@ -165,11 +165,11 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
-  - Protobuf (3.11.0)
+  - Protobuf (3.11.1)
 
 DEPENDENCIES:
-  - Crashlytics (~> 3.10.2)
-  - Fabric (~> 1.7.7)
+  - Crashlytics (~> 3.14.0)
+  - Fabric (~> 1.10.2)
   - Firebase
   - Firebase/AdMob
   - Firebase/Analytics
@@ -217,8 +217,8 @@ SPEC REPOS:
     - Protobuf
 
 SPEC CHECKSUMS:
-  Crashlytics: 55e24fc23989680285a21cb1146578d9d18e432c
-  Fabric: 25d0963b691fc97be566392243ff0ecef5a68338
+  Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
+  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
   Firebase: 458d109512200d1aca2e1b9b6cf7d68a869a4a46
   FirebaseABTesting: 0d10f3cdc3fa00f3f175b5b56c1003c8e888299f
   FirebaseAnalytics: 45f36d9c429fc91d206283900ab75390cd05ee8a
@@ -246,8 +246,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 43b8b64263023d4f32caa0b40f4c8bfa3c5f36d8
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
-  Protobuf: 394b2bf29ec303f4325e3ee4892c09e675647152
+  Protobuf: 20d79da7f20b5928b80043b05080b816e802659e
 
-PODFILE CHECKSUM: 5e6e1ba1c5259844a7e88b4308476d8a29f55795
+PODFILE CHECKSUM: 80e26fe0811b79e99b483c89f4c87741cf42955e
 
 COCOAPODS: 1.8.4
