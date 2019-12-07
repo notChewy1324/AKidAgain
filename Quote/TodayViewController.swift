@@ -31,7 +31,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     func setupRemoteConfigDefaults(){
         let defaultValues = [
-            "DailyQuoteText" : "“The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.” – Mark Caine" as NSObject
+            "DailyQuoteText" : "“The Way Get Started Is To Quit Talking And Begin Doing.” – Walt Disney" as NSObject
         ]
         RemoteConfig.remoteConfig().setDefaults(defaultValues)
     }
@@ -50,10 +50,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
-        FirebaseApp.configure()
-        setupRemoteConfigDefaults()
-        fecthRemoteConfig()
-        updateViewWithRCValues()
+
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
