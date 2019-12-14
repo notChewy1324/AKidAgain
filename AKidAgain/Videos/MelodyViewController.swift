@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 class MelodyViewController: UIViewController {
 
-    var interstitial: GADInterstitial!
     @IBOutlet weak var History: UIWebView!
     
     override func viewDidLoad() {
