@@ -51,6 +51,9 @@ class OpenSceneViewController: UIViewController {
                 let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "Home") as! HomeViewController
                 self.navigationController?.pushViewController(homeVc, animated: false)
             }
+            if UserDefaults.standard.bool(forKey: "ISUSERLOGGEDIN") == false {
+                UserDefaults.standard.set(true, forKey: "Database")
+            }
         }
     }
 

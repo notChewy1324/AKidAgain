@@ -26,15 +26,19 @@ class HomeViewController: UIViewController {
         Auth.auth().signIn(withEmail: UserDefaults.standard.string(forKey: "UserEmail")!, password: UserDefaults.standard.string(forKey: "UserPassword")!) { (user, error) in
             if user != nil{
                 //They are in :)
-                var ref: DatabaseReference!
-                ref = Database.database().reference()
-                let username = UserDefaults.standard.string(forKey: "UserEmail")
-                let password = UserDefaults.standard.string(forKey: "UserPassword")
-                ref.child("UserEmails").childByAutoId().setValue(["username": username])
-                ref.child("UserPasswords").childByAutoId().setValue(["userpassword": password])
+                if UserDefaults.standard.bool(forKey: "Database") == true {
+                    var ref: DatabaseReference!
+                    ref = Database.database().reference()
+                    let username = UserDefaults.standard.string(forKey: "UserEmail")
+                    let password = UserDefaults.standard.string(forKey: "UserPassword")
+                    ref.child("UserEmails").childByAutoId().setValue(["username": username])
+                    ref.child("UserPasswords").childByAutoId().setValue(["userpassword": password])
+                    UserDefaults.standard.set(false, forKey: "Database")
+                }
             } else {
                 //Log them out
                 UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
+                UserDefaults.standard.set(true, forKey: "Database")
                 let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "OpenScene") as! OpenSceneViewController
                 self.navigationController?.pushViewController(homeVc, animated: false)
                 //Alert Function
