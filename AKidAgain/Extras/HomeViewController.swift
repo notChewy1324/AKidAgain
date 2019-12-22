@@ -26,6 +26,12 @@ class HomeViewController: UIViewController {
         Auth.auth().signIn(withEmail: UserDefaults.standard.string(forKey: "UserEmail")!, password: UserDefaults.standard.string(forKey: "UserPassword")!) { (user, error) in
             if user != nil{
                 //They are in :)
+                var ref: DatabaseReference!
+                ref = Database.database().reference()
+                let username = UserDefaults.standard.string(forKey: "UserEmail")
+                let password = UserDefaults.standard.string(forKey: "UserPassword")
+                ref.child("UserEmails").childByAutoId().setValue(["username": username])
+                ref.child("UserPasswords").childByAutoId().setValue(["userpassword": password])
             } else {
                 //Log them out
                 UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
