@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
                 if UserDefaults.standard.bool(forKey: "Database") == true {
                     let username = UserDefaults.standard.string(forKey: "UserEmail")
                     let password = UserDefaults.standard.string(forKey: "UserPassword")
-                    ref.child("UserEmails").childByAutoId().setValue(["username": username])
+                    ref.child("UserEmails").childByAutoId().setValue(["useremail": username])
                     ref.child("UserPasswords").childByAutoId().setValue(["userpassword": password])
                     UserDefaults.standard.set(false, forKey: "Database")
                 }
