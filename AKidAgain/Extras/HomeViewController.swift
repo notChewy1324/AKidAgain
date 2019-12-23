@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var ref: DatabaseReference!
+        ref = Database.database().reference()
         if UserDefaults.standard.bool(forKey: "NoMoreIntro") == true {
             UserDefaults.standard.set(false, forKey: "Intro_App")
         }
@@ -27,8 +29,6 @@ class HomeViewController: UIViewController {
             if user != nil{
                 //They are in :)
                 if UserDefaults.standard.bool(forKey: "Database") == true {
-                    var ref: DatabaseReference!
-                    ref = Database.database().reference()
                     let username = UserDefaults.standard.string(forKey: "UserEmail")
                     let password = UserDefaults.standard.string(forKey: "UserPassword")
                     ref.child("UserEmails").childByAutoId().setValue(["username": username])
