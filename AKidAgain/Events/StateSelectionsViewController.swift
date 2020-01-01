@@ -9,7 +9,14 @@
 import UIKit
 import Firebase
 class StateSelectionsViewController: UIViewController {
-    
+/*
+    //State Selection Control
+    func StatesControl(State: String){
+        UserDefaults.standard.set(true, forKey: "\(State)")
+        let homeVc = storyboard?.instantiateViewController(withIdentifier: "\(State)")
+        navigationController?.pushViewController(homeVc!, animated: false)
+    }
+*/
     override func viewDidLoad() {
         super.viewDidLoad()
         if UserDefaults.standard.bool(forKey: "Ohio") == true{
