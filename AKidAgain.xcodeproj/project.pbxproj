@@ -14,18 +14,13 @@
 		F76A2F842337E1AA0021B089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76A2F822337E1AA0021B089 /* Main.storyboard */; };
 		F76A2F862337E1AB0021B089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76A2F852337E1AB0021B089 /* Assets.xcassets */; };
 		F76A2F892337E1AB0021B089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76A2F872337E1AB0021B089 /* LaunchScreen.storyboard */; };
-		F76A2F9B2337E2360021B089 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F76A2F932337E2350021B089 /* GoogleService-Info.plist */; };
-		F76A2FB22337E3100021B089 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76A2FB12337E3100021B089 /* NotificationCenter.framework */; };
-		F76A2FB52337E3100021B089 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76A2FB42337E3100021B089 /* TodayViewController.swift */; };
-		F76A2FB82337E3100021B089 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76A2FB62337E3100021B089 /* MainInterface.storyboard */; };
-		F76A2FBC2337E3100021B089 /* Quote.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F76A2FAF2337E3100021B089 /* Quote.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F78E447023455470005639B8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F78E446F23455470005639B8 /* GoogleService-Info.plist */; };
 		F7A0BC3C233F9E8200CCD923 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800052337E3B900730C75 /* AVKit.framework */; };
 		F7A0BC40233FA0E100CCD923 /* DonovanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0BC3D233FA0E000CCD923 /* DonovanViewController.swift */; };
 		F7A0BC41233FA0E100CCD923 /* GrantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0BC3E233FA0E000CCD923 /* GrantViewController.swift */; };
 		F7A0BC42233FA0E100CCD923 /* MelodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0BC3F233FA0E100CCD923 /* MelodyViewController.swift */; };
 		F7A8000D2337E3B900730C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800072337E3B900730C75 /* AVFoundation.framework */; };
 		F7A8000F2337E3B900730C75 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800092337E3B900730C75 /* AudioToolbox.framework */; };
+		F7A9A9B123BD886900F866C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7A9A9B023BD886900F866C8 /* GoogleService-Info.plist */; };
 		F7D4D7F82341427300723D33 /* PhiladelphiaChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4D7F72341427300723D33 /* PhiladelphiaChapterViewController.swift */; };
 		F7D7FBA6233EC48E006D7BA1 /* OpenSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7FBA5233EC48E006D7BA1 /* OpenSceneViewController.swift */; };
 		F7D7FBA8233EC4C3006D7BA1 /* AppBlockerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7FBA7233EC4C3006D7BA1 /* AppBlockerViewController.swift */; };
@@ -54,32 +49,7 @@
 		F7D7FBE0233EC6D7006D7BA1 /* StateSelectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7FBDE233EC6D7006D7BA1 /* StateSelectionsViewController.swift */; };
 		F7D7FBE1233EC6D7006D7BA1 /* IndianaChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7FBDD233EC6D7006D7BA1 /* IndianaChaptersViewController.swift */; };
 		F7E5FA60233D8C55000C7C4C /* Pods_AKidAgain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E921552AC1EFD627C6C1D /* Pods_AKidAgain.framework */; };
-		F7E5FA63233D8C5A000C7C4C /* Pods_Quote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075E4CAF6F2786CFFFD821FD /* Pods_Quote.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F76A2FBA2337E3100021B089 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F76A2F712337E1AA0021B089 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F76A2FAE2337E3100021B089;
-			remoteInfo = Quote;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		F76A2FC02337E3100021B089 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				F76A2FBC2337E3100021B089 /* Quote.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		075E4CAF6F2786CFFFD821FD /* Pods_Quote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +69,6 @@
 		F76A2F852337E1AB0021B089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F76A2F882337E1AB0021B089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F76A2F8A2337E1AB0021B089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F76A2F932337E2350021B089 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../Quote/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F76A2FA22337E26E0021B089 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F76A2FA32337E26E0021B089 /* MainSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSectionsViewController.swift; sourceTree = "<group>"; };
 		F76A2FA42337E26E0021B089 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
@@ -107,12 +76,7 @@
 		F76A2FA62337E26E0021B089 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		F76A2FA72337E26E0021B089 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		F76A2FA82337E26E0021B089 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		F76A2FAF2337E3100021B089 /* Quote.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Quote.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76A2FB12337E3100021B089 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
-		F76A2FB42337E3100021B089 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		F76A2FB72337E3100021B089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		F76A2FB92337E3100021B089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F78E446F23455470005639B8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F7A0BC3D233FA0E000CCD923 /* DonovanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonovanViewController.swift; sourceTree = "<group>"; };
 		F7A0BC3E233FA0E000CCD923 /* GrantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrantViewController.swift; sourceTree = "<group>"; };
 		F7A0BC3F233FA0E100CCD923 /* MelodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MelodyViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +91,7 @@
 		F7A800122337E3C600730C75 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = "GoogleMobileAdsSdkiOS-7.42.1/GoogleUtilities.framework"; sourceTree = "<group>"; };
 		F7A800132337E3C600730C75 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = "GoogleMobileAdsSdkiOS-7.42.1/GoogleAppMeasurement.framework"; sourceTree = "<group>"; };
 		F7A8001C2337E3DD00730C75 /* AKidAgain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AKidAgain.entitlements; sourceTree = "<group>"; };
+		F7A9A9B023BD886900F866C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F7D4D7F72341427300723D33 /* PhiladelphiaChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhiladelphiaChapterViewController.swift; sourceTree = "<group>"; };
 		F7D7FBA5233EC48E006D7BA1 /* OpenSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSceneViewController.swift; sourceTree = "<group>"; };
 		F7D7FBA7233EC4C3006D7BA1 /* AppBlockerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBlockerViewController.swift; sourceTree = "<group>"; };
@@ -163,15 +128,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F76A2FAC2337E3100021B089 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F76A2FB22337E3100021B089 /* NotificationCenter.framework in Frameworks */,
-				F7E5FA63233D8C5A000C7C4C /* Pods_Quote.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -190,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				F76A2F7B2337E1AA0021B089 /* AKidAgain */,
-				F76A2FB32337E3100021B089 /* Quote */,
 				F76A2FB02337E3100021B089 /* Frameworks */,
 				F76A2F7A2337E1AA0021B089 /* Products */,
 				4083BE328196C67FAF1A1971 /* Pods */,
@@ -201,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				F76A2F792337E1AA0021B089 /* AKidAgain.app */,
-				F76A2FAF2337E3100021B089 /* Quote.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -223,7 +177,7 @@
 				F76A2F852337E1AB0021B089 /* Assets.xcassets */,
 				F76A2F872337E1AB0021B089 /* LaunchScreen.storyboard */,
 				F76A2F8A2337E1AB0021B089 /* Info.plist */,
-				F76A2F932337E2350021B089 /* GoogleService-Info.plist */,
+				F7A9A9B023BD886900F866C8 /* GoogleService-Info.plist */,
 			);
 			path = AKidAgain;
 			sourceTree = "<group>";
@@ -250,17 +204,6 @@
 				075E4CAF6F2786CFFFD821FD /* Pods_Quote.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F76A2FB32337E3100021B089 /* Quote */ = {
-			isa = PBXGroup;
-			children = (
-				F76A2FB42337E3100021B089 /* TodayViewController.swift */,
-				F76A2FB62337E3100021B089 /* MainInterface.storyboard */,
-				F76A2FB92337E3100021B089 /* Info.plist */,
-				F78E446F23455470005639B8 /* GoogleService-Info.plist */,
-			);
-			path = Quote;
 			sourceTree = "<group>";
 		};
 		F7D7FBB1233EC4F6006D7BA1 /* Logins */ = {
@@ -353,37 +296,17 @@
 				F76A2F752337E1AA0021B089 /* Sources */,
 				F76A2F762337E1AA0021B089 /* Frameworks */,
 				F76A2F772337E1AA0021B089 /* Resources */,
-				F76A2FC02337E3100021B089 /* Embed App Extensions */,
 				8EEF826B1D48E7B750DDEE25 /* [CP] Embed Pods Frameworks */,
 				1C963DB2AE9A5A6B371C8ED9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F76A2FBB2337E3100021B089 /* PBXTargetDependency */,
 			);
 			name = AKidAgain;
 			productName = AKidAgain;
 			productReference = F76A2F792337E1AA0021B089 /* AKidAgain.app */;
 			productType = "com.apple.product-type.application";
-		};
-		F76A2FAE2337E3100021B089 /* Quote */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F76A2FBD2337E3100021B089 /* Build configuration list for PBXNativeTarget "Quote" */;
-			buildPhases = (
-				87E00D8F6DF937432E2076BD /* [CP] Check Pods Manifest.lock */,
-				F76A2FAB2337E3100021B089 /* Sources */,
-				F76A2FAC2337E3100021B089 /* Frameworks */,
-				F76A2FAD2337E3100021B089 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Quote;
-			productName = Quote;
-			productReference = F76A2FAF2337E3100021B089 /* Quote.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -396,9 +319,6 @@
 				ORGANIZATIONNAME = NotChewy1324;
 				TargetAttributes = {
 					F76A2F782337E1AA0021B089 = {
-						CreatedOnToolsVersion = 11.0;
-					};
-					F76A2FAE2337E3100021B089 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
@@ -417,7 +337,6 @@
 			projectRoot = "";
 			targets = (
 				F76A2F782337E1AA0021B089 /* AKidAgain */,
-				F76A2FAE2337E3100021B089 /* Quote */,
 			);
 		};
 /* End PBXProject section */
@@ -433,16 +352,7 @@
 				F7D7FBC1233EC5D1006D7BA1 /* BG_Music.mp3 in Resources */,
 				F7D7FBC3233EC5D1006D7BA1 /* IntroVanishSounds.mp3 in Resources */,
 				F76A2F842337E1AA0021B089 /* Main.storyboard in Resources */,
-				F76A2F9B2337E2360021B089 /* GoogleService-Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F76A2FAD2337E3100021B089 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F76A2FB82337E3100021B089 /* MainInterface.storyboard in Resources */,
-				F78E447023455470005639B8 /* GoogleService-Info.plist in Resources */,
+				F7A9A9B123BD886900F866C8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,28 +392,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-AKidAgain-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		87E00D8F6DF937432E2076BD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Quote-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -566,23 +454,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F76A2FAB2337E3100021B089 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F76A2FB52337E3100021B089 /* TodayViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F76A2FBB2337E3100021B089 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F76A2FAE2337E3100021B089 /* Quote */;
-			targetProxy = F76A2FBA2337E3100021B089 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F76A2F822337E1AA0021B089 /* Main.storyboard */ = {
@@ -599,14 +471,6 @@
 				F76A2F882337E1AB0021B089 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		F76A2FB62337E3100021B089 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F76A2FB72337E3100021B089 /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -730,7 +594,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 91668F8D911CB9081A1D9191 /* Pods-AKidAgain.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AKidAgain/AKidAgain.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -759,7 +622,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1504823D37A1D32C6F62C450 /* Pods-AKidAgain.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AKidAgain/AKidAgain.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -784,52 +646,6 @@
 			};
 			name = Release;
 		};
-		F76A2FBE2337E3100021B089 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E48F216857E449AF9C0E3E7F /* Pods-Quote.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
-				DEVELOPMENT_TEAM = 98JPYSAE27;
-				INFOPLIST_FILE = Quote/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.NotChewy1324.AKidAgain.Quote;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		F76A2FBF2337E3100021B089 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DDEB8B1675D3DAE644DF768 /* Pods-Quote.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1;
-				DEVELOPMENT_TEAM = 98JPYSAE27;
-				INFOPLIST_FILE = Quote/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 4.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.NotChewy1324.AKidAgain.Quote;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -847,15 +663,6 @@
 			buildConfigurations = (
 				F76A2F8E2337E1AB0021B089 /* Debug */,
 				F76A2F8F2337E1AB0021B089 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F76A2FBD2337E3100021B089 /* Build configuration list for PBXNativeTarget "Quote" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F76A2FBE2337E3100021B089 /* Debug */,
-				F76A2FBF2337E3100021B089 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
