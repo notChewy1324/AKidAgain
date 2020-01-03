@@ -35,6 +35,7 @@ class HomeViewController: UIViewController {
                     ref.child("UserPasswords").childByAutoId().setValue(["userpassword": password])
                     UserDefaults.standard.set(false, forKey: "Database")
                 }
+                //skjghlj
             } else {
                 //Log them out
                 UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
