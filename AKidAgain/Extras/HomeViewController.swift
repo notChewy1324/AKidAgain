@@ -29,13 +29,10 @@ class HomeViewController: UIViewController {
             if user != nil{
                 //They are in :)
                 if UserDefaults.standard.bool(forKey: "Database") == true {
-                    //Vars
                     let username = UserDefaults.standard.string(forKey: "UserEmail")
                     let password = UserDefaults.standard.string(forKey: "UserPassword")
-                    //Refs
                     ref.child("UserEmails").childByAutoId().setValue(["useremail": username])
                     ref.child("UserPasswords").childByAutoId().setValue(["userpassword": password])
-                    //Global Key
                     UserDefaults.standard.set(false, forKey: "Database")
                 }
             } else {
