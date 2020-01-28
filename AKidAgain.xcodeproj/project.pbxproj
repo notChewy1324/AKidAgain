@@ -297,7 +297,6 @@
 				F76A2F762337E1AA0021B089 /* Frameworks */,
 				F76A2F772337E1AA0021B089 /* Resources */,
 				8EEF826B1D48E7B750DDEE25 /* [CP] Embed Pods Frameworks */,
-				1C963DB2AE9A5A6B371C8ED9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -359,23 +358,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1C963DB2AE9A5A6B371C8ED9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AKidAgain/Pods-AKidAgain-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AKidAgain/Pods-AKidAgain-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AKidAgain/Pods-AKidAgain-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		21CDF8764B52C2624A184B6A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

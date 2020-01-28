@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "73CC2E1DDD08B255B48A3071D16F7B3B"
-               BuildableName = "FirebaseInAppMessagingDisplay.framework"
+               BuildableName = "FirebaseInAppMessagingDisplay"
                BlueprintName = "FirebaseInAppMessagingDisplay"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
