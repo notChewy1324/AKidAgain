@@ -13,8 +13,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var ref: DatabaseReference!
-        ref = Database.database().reference()
         if UserDefaults.standard.bool(forKey: "NoMoreIntro") == true {
             UserDefaults.standard.set(false, forKey: "Intro_App")
         }
@@ -28,13 +26,6 @@ class HomeViewController: UIViewController {
         Auth.auth().signIn(withEmail: UserDefaults.standard.string(forKey: "UserEmail")!, password: UserDefaults.standard.string(forKey: "UserPassword")!) { (user, error) in
             if user != nil{
                 //They are in :)
-                if UserDefaults.standard.bool(forKey: "Database") == true {
-                    let username = UserDefaults.standard.string(forKey: "UserEmail")
-                    let password = UserDefaults.standard.string(forKey: "UserPassword")
-                    ref.child("UserEmails").childByAutoId().setValue(["useremail": username])
-                    ref.child("UserPasswords").childByAutoId().setValue(["userpassword": password])
-                    UserDefaults.standard.set(false, forKey: "Database")
-                }
             } else {
                 //Log them out
                 UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
