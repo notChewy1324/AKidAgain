@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-AKidAgain/Pods-AKidAgain-resources.sh
-${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInAppMessagingDisplay/InAppMessagingDisplayResources.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInAppMessaging/InAppMessagingDisplayResources.bundle
