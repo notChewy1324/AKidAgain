@@ -14,6 +14,12 @@ import UserNotifications
 import UserNotificationsUI
 import FirebasePerformance
 import FirebaseInstanceID
+import FirebaseCoreDiagnostics
+import FirebaseInAppMessaging
+import FirebaseRemoteConfig
+import FirebaseAuth
+import FirebaseCrashlytics
+import IQKeyboardManagerSwift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -33,6 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     completionHandler: { _,_  in })
         
             application.registerForRemoteNotifications()
+        
+            IQKeyboardManager.shared.enable = true
             
             return true
 
