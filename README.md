@@ -17,4 +17,4 @@ https://akidagain.page.link/download
 
 # Version Infromation
 
-This is app version is made for devices that run on the IOS App Store.
+This app version is made for iPhones and iPads that run IOS 10.0 and newer on the IOS App Store.
