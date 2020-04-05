@@ -18,17 +18,9 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func button(_ sender: Any) {
-        let path = Bundle.main.path(forResource: "IntroVanishSounds.mp3", ofType:nil)!
-        let url = URL(fileURLWithPath: path)
-
-        do {
-            audioPLayer = try AVAudioPlayer(contentsOf: url)
-            audioPLayer?.play()
-        } catch {
-            // couldn't load file :(
-        }
+        ClickSound()
         let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "Design") as! DesignViewController
-        self.navigationController?.pushViewController(homeVc, animated: true)
+        self.navigationController?.pushViewController(homeVc, animated: false)
     }
 
 }
