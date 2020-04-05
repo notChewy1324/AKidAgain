@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
-class SignUpViewController: UIViewController, UITextFieldDelegate {
+class SignUpViewController: UIViewController {
 
     //objects
     @IBOutlet weak var email: UITextField!
@@ -21,22 +21,20 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (authResult, error) in
             if authResult != nil{
                 //Sign Up is Successful
-                self.TextErrorDisplay.text = "Sign Up is Successful"
+                self.TextErrorDisplay.text = "Sign up is successful"
                 UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
+                UserDefaults.standard.set(true, forKey: "Intro_App")
                 UserDefaults.standard.set(self.email.text, forKey: "UserEmail")
                 UserDefaults.standard.set(self.password.text, forKey: "UserPassword")
-                Auth.auth().currentUser?.sendEmailVerification { (error) in
-                    //Sends email to verify account
-                }
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                     let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "Home") as! HomeViewController
                     self.navigationController?.pushViewController(homeVc, animated: false)
                 }
-            }else{
+            } else {
                 //Sign Up Failed
                 UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1){
-                self.TextErrorDisplay.text = "Sign Up has failed due to invalid Email Address or the account has been Disabled."
+                self.TextErrorDisplay.text = "Sign up has failed due to invalid email address."
                 }
             }
         }
@@ -48,16 +46,5 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        password.delegate = self
-        email.delegate = self
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        return true
     }
 }
