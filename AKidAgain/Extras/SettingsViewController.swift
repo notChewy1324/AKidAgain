@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseCrashlytics
 class SettingsViewController: UIViewController {
 
     //Objects
@@ -22,7 +23,7 @@ class SettingsViewController: UIViewController {
             UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
             self.navigationController?.popToRootViewController(animated: true)
         } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
+            Crashlytics.crashlytics().record(error: signOutError)
         }
         
     }
@@ -38,6 +39,7 @@ class SettingsViewController: UIViewController {
         user?.delete { error in
             if error != nil {
                 //Account failed to delete
+                Crashlytics.crashlytics().record(error: error!)
                 UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
             } else {
                 //Account has been succesfully deleted
