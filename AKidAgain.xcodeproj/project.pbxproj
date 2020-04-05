@@ -167,11 +167,11 @@
 				F76A2F7C2337E1AA0021B089 /* AppDelegate.swift */,
 				F7086C852347E90F0027615E /* GlobalFuncs.swift */,
 				F7D7FBE9233EC707006D7BA1 /* Videos */,
+				F7D7FBC4233EC5D6006D7BA1 /* Sounds */,
 				F7D7FBE2233EC6DB006D7BA1 /* Events */,
+				F7D7FBBA233EC551006D7BA1 /* Extras */,
 				F7D7FBDB233EC6B4006D7BA1 /* Community */,
 				F7D7FBCD233EC61C006D7BA1 /* Intro */,
-				F7D7FBC4233EC5D6006D7BA1 /* Sounds */,
-				F7D7FBBA233EC551006D7BA1 /* Extras */,
 				F7D7FBB1233EC4F6006D7BA1 /* Logins */,
 				F76A2F822337E1AA0021B089 /* Main.storyboard */,
 				F76A2F852337E1AB0021B089 /* Assets.xcassets */,
@@ -610,7 +610,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.4;
+				MARKETING_VERSION = 5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.NotChewy1324.AKidAgain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -638,7 +638,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 4.4;
+				MARKETING_VERSION = 5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.NotChewy1324.AKidAgain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
