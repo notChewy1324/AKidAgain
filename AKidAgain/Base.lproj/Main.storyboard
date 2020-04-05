@@ -4875,7 +4875,7 @@ Cg
                                 </variation>
                                 <connections>
                                     <action selector="doSomething:" destination="uOc-YS-yxN" eventType="touchUpInside" id="fLb-zj-VmQ"/>
-                                    <segue destination="SXb-Xf-XMn" kind="show" animates="NO" id="YtO-cf-XdE"/>
+                                    <segue destination="xHf-hB-FC5" kind="show" animates="NO" id="GyZ-G0-uaN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUl-MW-yiK">
@@ -6352,7 +6352,7 @@ Cg
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1G5-Sa-wza">
                                 <rect key="frame" x="16" y="0.0" width="288" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="vPy-ZT-Vqp"/>
+                                    <constraint firstAttribute="height" constant="60" id="iJN-CC-2my"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="History">
@@ -6382,7 +6382,7 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RFI-v3-bOs">
                                 <rect key="frame" x="16" y="454" width="288" height="33"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="kT1-BM-MqL"/>
+                                    <constraint firstAttribute="height" constant="33" id="Emc-FP-2Nr"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="TealBlue">
                                     <attributedString key="attributedTitle">
@@ -6406,13 +6406,13 @@ Cg
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aSv-aW-ZhG">
                                 <rect key="frame" x="16" y="495" width="288" height="33"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="PHd-ad-IYb"/>
+                                    <constraint firstAttribute="height" constant="33" id="VfJ-ez-Ayc"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="ORANGE">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Done">
+                                        <fragment content="Quote">
                                             <attributes>
-                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <font key="NSFont" size="18" name="Geneva"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
@@ -6421,10 +6421,7 @@ Cg
                                 </state>
                                 <connections>
                                     <action selector="button:" destination="xHf-hB-FC5" eventType="touchUpInside" id="G22-3r-dGE"/>
-                                    <segue destination="uOc-YS-yxN" kind="show" animates="NO" id="bmT-7L-kGl">
-                                        <segue key="commit" inheritsFrom="parent" id="Nc7-qP-mFU"/>
-                                        <segue key="preview" inheritsFrom="commit" id="8aU-61-heD"/>
-                                    </segue>
+                                    <segue destination="SXb-Xf-XMn" kind="show" animates="NO" id="QzU-Ij-ee5"/>
                                 </connections>
                             </button>
                             <activityIndicatorView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ON2-KH-Ip5">
@@ -6434,22 +6431,22 @@ Cg
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="RFI-v3-bOs" firstAttribute="top" secondItem="uxG-D8-WTI" secondAttribute="bottom" constant="8" symbolic="YES" id="57h-Xr-q1x"/>
-                            <constraint firstItem="1G5-Sa-wza" firstAttribute="leading" secondItem="eoJ-KQ-YNR" secondAttribute="leadingMargin" id="7t0-Xw-Zcl"/>
-                            <constraint firstItem="RFI-v3-bOs" firstAttribute="centerX" secondItem="aSv-aW-ZhG" secondAttribute="centerX" id="B82-at-yUf"/>
-                            <constraint firstItem="1G5-Sa-wza" firstAttribute="leading" secondItem="uxG-D8-WTI" secondAttribute="leading" id="CZO-fu-wCZ"/>
-                            <constraint firstItem="uxG-D8-WTI" firstAttribute="trailing" secondItem="RFI-v3-bOs" secondAttribute="trailing" id="Fbe-b0-Tyk"/>
-                            <constraint firstAttribute="bottom" secondItem="aSv-aW-ZhG" secondAttribute="bottom" constant="20" symbolic="YES" id="Gkm-PG-rqT"/>
-                            <constraint firstItem="1G5-Sa-wza" firstAttribute="trailing" secondItem="eoJ-KQ-YNR" secondAttribute="trailingMargin" id="KWX-xm-SND"/>
-                            <constraint firstItem="uxG-D8-WTI" firstAttribute="top" secondItem="1G5-Sa-wza" secondAttribute="bottom" constant="8" symbolic="YES" id="Kyk-2A-NLX"/>
-                            <constraint firstItem="ON2-KH-Ip5" firstAttribute="centerX" secondItem="RFI-v3-bOs" secondAttribute="centerX" constant="1" id="MaG-Hb-L29"/>
-                            <constraint firstItem="uxG-D8-WTI" firstAttribute="leading" secondItem="RFI-v3-bOs" secondAttribute="leading" id="Msx-h9-lHh"/>
-                            <constraint firstItem="1G5-Sa-wza" firstAttribute="trailing" secondItem="uxG-D8-WTI" secondAttribute="trailing" id="R7R-cJ-863"/>
-                            <constraint firstItem="ON2-KH-Ip5" firstAttribute="leading" secondItem="lDm-Cb-MuU" secondAttribute="leading" constant="151" id="c82-sF-PW8"/>
-                            <constraint firstItem="ON2-KH-Ip5" firstAttribute="centerY" secondItem="eoJ-KQ-YNR" secondAttribute="centerY" constant="1" id="cvb-zW-qgg"/>
-                            <constraint firstItem="1G5-Sa-wza" firstAttribute="top" secondItem="lDm-Cb-MuU" secondAttribute="top" id="ga6-sc-Qcv"/>
-                            <constraint firstItem="aSv-aW-ZhG" firstAttribute="top" secondItem="RFI-v3-bOs" secondAttribute="bottom" constant="8" symbolic="YES" id="qGP-tB-QQU"/>
-                            <constraint firstItem="RFI-v3-bOs" firstAttribute="leading" secondItem="aSv-aW-ZhG" secondAttribute="leading" id="qTt-oO-hDM"/>
+                            <constraint firstItem="uxG-D8-WTI" firstAttribute="trailing" secondItem="RFI-v3-bOs" secondAttribute="trailing" id="5Kv-lY-h1e"/>
+                            <constraint firstItem="RFI-v3-bOs" firstAttribute="leading" secondItem="aSv-aW-ZhG" secondAttribute="leading" id="5qZ-bL-V20"/>
+                            <constraint firstItem="RFI-v3-bOs" firstAttribute="trailing" secondItem="aSv-aW-ZhG" secondAttribute="trailing" id="8gw-vU-0qb"/>
+                            <constraint firstItem="ON2-KH-Ip5" firstAttribute="top" secondItem="eoJ-KQ-YNR" secondAttribute="top" constant="256.5" id="GnH-Ri-4gL"/>
+                            <constraint firstItem="1G5-Sa-wza" firstAttribute="leading" secondItem="eoJ-KQ-YNR" secondAttribute="leadingMargin" id="IR7-p7-0TF"/>
+                            <constraint firstItem="RFI-v3-bOs" firstAttribute="top" secondItem="uxG-D8-WTI" secondAttribute="bottom" constant="8" symbolic="YES" id="JJs-7U-c2D"/>
+                            <constraint firstItem="aSv-aW-ZhG" firstAttribute="top" secondItem="RFI-v3-bOs" secondAttribute="bottom" constant="8" symbolic="YES" id="KBO-Uf-XQ6"/>
+                            <constraint firstItem="1G5-Sa-wza" firstAttribute="top" secondItem="lDm-Cb-MuU" secondAttribute="top" id="Nhx-gv-YQb"/>
+                            <constraint firstItem="1G5-Sa-wza" firstAttribute="trailing" secondItem="uxG-D8-WTI" secondAttribute="trailing" id="XNu-Mq-fGv"/>
+                            <constraint firstItem="uxG-D8-WTI" firstAttribute="leading" secondItem="RFI-v3-bOs" secondAttribute="leading" id="jXt-wU-4ZN"/>
+                            <constraint firstAttribute="bottom" secondItem="aSv-aW-ZhG" secondAttribute="bottom" constant="20" symbolic="YES" id="mol-hB-fSo"/>
+                            <constraint firstItem="uxG-D8-WTI" firstAttribute="top" secondItem="1G5-Sa-wza" secondAttribute="bottom" constant="8" symbolic="YES" id="nLJ-0R-QWp"/>
+                            <constraint firstItem="lDm-Cb-MuU" firstAttribute="trailing" secondItem="ON2-KH-Ip5" secondAttribute="trailing" constant="149" id="pjt-aO-E2q"/>
+                            <constraint firstItem="1G5-Sa-wza" firstAttribute="trailing" secondItem="eoJ-KQ-YNR" secondAttribute="trailingMargin" id="plz-6L-C9V"/>
+                            <constraint firstItem="ON2-KH-Ip5" firstAttribute="leading" secondItem="lDm-Cb-MuU" secondAttribute="leading" constant="151" id="pwz-hZ-gXJ"/>
+                            <constraint firstItem="1G5-Sa-wza" firstAttribute="leading" secondItem="uxG-D8-WTI" secondAttribute="leading" id="zir-37-ver"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lDm-Cb-MuU"/>
                     </view>
@@ -9392,8 +9389,9 @@ Cgo
     <inferredMetricsTieBreakers>
         <segue reference="Kdu-Dq-Lwl"/>
         <segue reference="K4M-95-LSC"/>
+        <segue reference="g6p-ap-qV1"/>
         <segue reference="n6u-nX-O6g"/>
-        <segue reference="9lM-rJ-ZfE"/>
+        <segue reference="mAD-cp-xEe"/>
         <segue reference="lfw-cF-zGF"/>
         <segue reference="frZ-P8-Mvt"/>
         <segue reference="UCK-P0-ux8"/>
