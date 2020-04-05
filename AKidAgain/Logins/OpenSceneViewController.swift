@@ -42,6 +42,8 @@ class OpenSceneViewController: UIViewController {
         setupRemoteConfigDefaults()
         fecthRemoteConfig()
         updateViewWithRCValues()
+        // MARK: -Fix Before Publish
+        UserDefaults.standard.setValue(false, forKey: "AppBlockerScreen")
         if UserDefaults.standard.bool(forKey: "AppBlockerScreen") == true {
             let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "AppBlocker") as! AppBlockerViewController
             self.navigationController?.pushViewController(homeVc, animated: false)
@@ -58,12 +60,6 @@ class OpenSceneViewController: UIViewController {
     }
 
     @IBAction func Something(_ sender: Any) {
-        if UserDefaults.standard.bool(forKey: "NoMoreIntro") == true {
-            UserDefaults.standard.set(false, forKey: "Intro_App")
-        }
-        if UserDefaults.standard.bool(forKey: "NoMoreIntro") == false {
-            UserDefaults.standard.set(true, forKey: "Intro_App")
-        }
         ClickSound()
     }
 }
