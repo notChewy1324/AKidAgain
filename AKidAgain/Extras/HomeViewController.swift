@@ -13,16 +13,12 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if UserDefaults.standard.bool(forKey: "NoMoreIntro") == true {
-            UserDefaults.standard.set(false, forKey: "Intro_App")
-        }
-        if UserDefaults.standard.bool(forKey: "NoMoreIntro") == false {
-            UserDefaults.standard.set(true, forKey: "Intro_App")
-        }
+        
         if UserDefaults.standard.bool(forKey: "Intro_App") == true {
             let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "Welcome") as! WelcomeViewController
             self.navigationController?.pushViewController(homeVc, animated: false)
         }
+        
         Auth.auth().signIn(withEmail: UserDefaults.standard.string(forKey: "UserEmail")!, password: UserDefaults.standard.string(forKey: "UserPassword")!) { (user, error) in
             if user != nil{
                 //They are in :)
@@ -49,6 +45,5 @@ class HomeViewController: UIViewController {
     
     @IBAction func doSomething(_ sender: AnyObject) {
         ClickSound()
-        UserDefaults.standard.set(false, forKey: "Intro_App_False")
     }
 }
