@@ -4318,6 +4318,7 @@ Cg
                     <navigationItem key="navigationItem" id="4qn-TX-myH"/>
                     <connections>
                         <outlet property="History" destination="pXy-bA-Tnl" id="JDo-eM-uGJ"/>
+                        <outlet property="titleText" destination="hKe-jZ-2hi" id="tbA-Qf-Fya"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W82-oF-tmp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4589,6 +4590,7 @@ Cg
                     <navigationItem key="navigationItem" id="w8W-tW-Pnk"/>
                     <connections>
                         <outlet property="History" destination="yrQ-ue-zNF" id="Kn9-fy-KPm"/>
+                        <outlet property="titleText" destination="boc-b4-a9P" id="Ch7-W0-OuL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6O0-wp-lK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4842,6 +4844,7 @@ Cg
                     <navigationItem key="navigationItem" id="ezR-Zy-BXs"/>
                     <connections>
                         <outlet property="Photos" destination="Old-8j-WP9" id="uj2-1d-VSm"/>
+                        <outlet property="titleText" destination="ERr-w1-LdO" id="oQf-ny-OJX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rgJ-nw-KOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -5136,7 +5139,7 @@ Cg
                                         <fragment content="No Thank You">
                                             <attributes>
                                                 <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="36" name=".SFNS-Regular"/>
+                                                <font key="NSFont" metaFont="system" size="36"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -5238,7 +5241,7 @@ Cg
                                         <fragment content="Reset">
                                             <attributes>
                                                 <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="48" name=".SFNS-Regular"/>
+                                                <font key="NSFont" metaFont="system" size="48"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -5467,7 +5470,7 @@ Cg
                                         <fragment content="HOME">
                                             <attributes>
                                                 <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="25" name=".SFNS-Regular"/>
+                                                <font key="NSFont" metaFont="system" size="25"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -6412,7 +6415,7 @@ Cg
                                     <attributedString key="attributedTitle">
                                         <fragment content="Quote">
                                             <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <font key="NSFont" size="18" name="Geneva"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
@@ -6714,7 +6717,7 @@ Cg
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="bIi-Xv-NY7" secondAttribute="trailing" id="2hy-iu-CLr"/>
                             <constraint firstItem="8N1-bL-sFc" firstAttribute="top" secondItem="bIi-Xv-NY7" secondAttribute="bottom" constant="8" symbolic="YES" id="5ME-dH-cCt"/>
@@ -6788,7 +6791,7 @@ Cg
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="92b-PR-J1N" firstAttribute="centerX" secondItem="gf6-6l-fyA" secondAttribute="centerX" id="9Kx-3Y-qCL"/>
                             <constraint firstItem="gf6-6l-fyA" firstAttribute="top" secondItem="92b-PR-J1N" secondAttribute="bottom" constant="8" symbolic="YES" id="HoW-rN-Y3C"/>
@@ -7199,7 +7202,7 @@ Cg
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Gxr-AO-cFP" firstAttribute="leading" secondItem="zQ3-8a-cr2" secondAttribute="leading" id="0qU-SA-AkT"/>
                             <constraint firstItem="laQ-6F-TC3" firstAttribute="top" secondItem="jil-eK-9wW" secondAttribute="top" id="2xt-12-NY8"/>
@@ -7416,7 +7419,7 @@ Please help us spread the word as we encourage local families, potential volunte
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="8ZR-5d-KyA" firstAttribute="top" secondItem="2Z8-G1-Ui1" secondAttribute="bottom" constant="8" symbolic="YES" id="5Rv-1g-M8W"/>
                             <constraint firstItem="8ZR-5d-KyA" firstAttribute="trailing" secondItem="bbL-Jn-tkF" secondAttribute="trailing" id="OG6-8D-Qfs"/>
@@ -8554,18 +8557,12 @@ Cgo
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="WdI-Ri-35E">
-                                <rect key="frame" x="141.5" y="255.5" width="37" height="37"/>
-                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="WdI-Ri-35E" firstAttribute="centerY" secondItem="L2g-mB-nqq" secondAttribute="centerY" id="3ks-rL-7ie"/>
                             <constraint firstItem="7xe-v4-SsM" firstAttribute="trailing" secondItem="LOq-xF-Td8" secondAttribute="trailing" id="8EW-DT-rGK"/>
                             <constraint firstItem="LOq-xF-Td8" firstAttribute="bottom" secondItem="1px-sy-nTb" secondAttribute="bottom" id="AvE-nL-mIU"/>
                             <constraint firstItem="LOq-xF-Td8" firstAttribute="top" secondItem="7xe-v4-SsM" secondAttribute="bottom" id="E3S-p2-FpR"/>
-                            <constraint firstItem="7xe-v4-SsM" firstAttribute="centerX" secondItem="WdI-Ri-35E" secondAttribute="centerX" id="LSU-YB-jov"/>
                             <constraint firstItem="7xe-v4-SsM" firstAttribute="top" secondItem="1px-sy-nTb" secondAttribute="top" id="e0m-xd-qra"/>
                             <constraint firstItem="7xe-v4-SsM" firstAttribute="leading" secondItem="LOq-xF-Td8" secondAttribute="leading" id="fUB-MP-Mm0"/>
                             <constraint firstItem="7xe-v4-SsM" firstAttribute="leading" secondItem="L2g-mB-nqq" secondAttribute="leading" id="pUt-0B-jk9"/>
@@ -8576,7 +8573,7 @@ Cgo
                     <navigationItem key="navigationItem" id="ZVL-Ws-Px3"/>
                     <connections>
                         <outlet property="Photos" destination="LOq-xF-Td8" id="Ugl-9J-cqI"/>
-                        <outlet property="loader" destination="WdI-Ri-35E" id="bNM-My-SBD"/>
+                        <outlet property="titleText" destination="hUC-Ro-fyf" id="DxZ-dw-ahV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7qQ-P6-XYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -8628,6 +8625,7 @@ Cgo
                     <navigationItem key="navigationItem" id="OUN-Rb-0bJ"/>
                     <connections>
                         <outlet property="History" destination="oCS-Up-Fr8" id="qVx-Yz-7s7"/>
+                        <outlet property="titleText" destination="4Un-Zv-zAt" id="NwI-lv-fgM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="taI-De-S2l" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -8679,6 +8677,7 @@ Cgo
                     <navigationItem key="navigationItem" id="qA8-xs-rTK"/>
                     <connections>
                         <outlet property="History" destination="dSy-av-IPf" id="Rse-p1-PCn"/>
+                        <outlet property="titleText" destination="h18-i3-0BI" id="ZQ4-YX-FTV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CW0-Rx-pKb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -9387,12 +9386,13 @@ Cgo
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="QzU-Ij-ee5"/>
         <segue reference="Kdu-Dq-Lwl"/>
         <segue reference="K4M-95-LSC"/>
         <segue reference="g6p-ap-qV1"/>
         <segue reference="n6u-nX-O6g"/>
         <segue reference="mAD-cp-xEe"/>
-        <segue reference="lfw-cF-zGF"/>
+        <segue reference="ooo-gB-FBk"/>
         <segue reference="frZ-P8-Mvt"/>
         <segue reference="UCK-P0-ux8"/>
         <segue reference="RFY-xi-4QB"/>
