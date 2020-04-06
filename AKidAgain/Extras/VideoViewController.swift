@@ -11,36 +11,28 @@ import Firebase
 class VideoViewController: UIViewController {
     
     @IBOutlet weak var History: UIWebView!
-    @IBOutlet weak var Loader: UIActivityIndicatorView!
+    @IBOutlet weak var titleText: UINavigationItem!
     
     func Top(TopCode:String){
         let url = URL(string: "https://www.youtube.com/embed/\(TopCode)")
         History.loadRequest(URLRequest(url: url!))
-        if History.isLoading == true {
-            Loader.startAnimating()
-            Loader.isHidden = false
-        }
-        if History.isLoading == false {
-            Loader.stopAnimating()
-            Loader.isHidden = true
-        }
     }
     
     //remote-config
-    func updateViewWithRCValues(){
+    func updateViewWithRCValues() {
         //remote config values here
         let SouthEvents = RemoteConfig.remoteConfig().configValue(forKey: "TopVideoCode").stringValue ?? ""
         Top(TopCode: "\(SouthEvents)")
     }
     
-    func setupRemoteConfigDefaults(){
+    func setupRemoteConfigDefaults() {
         let defaultValues = [
             "TopVideoCode" : "bkTTG-QRsBw" as NSObject
         ]
         RemoteConfig.remoteConfig().setDefaults(defaultValues)
     }
     
-    func fecthRemoteConfig(){
+    func fecthRemoteConfig() {
         RemoteConfig.remoteConfig().fetch(withExpirationDuration: 3600) { [unowned self] (status, error) in
             guard error == nil else {
                 print("Uh-Oh. Got an error fetching remote values: \(String(describing: error))")
@@ -59,7 +51,6 @@ class VideoViewController: UIViewController {
         updateViewWithRCValues()
     }
     
-    //Ads Show
     @IBAction func doSomething(_ sender: AnyObject) {
         History.reload()
     }
