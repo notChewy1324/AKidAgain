@@ -11,6 +11,7 @@ import UIKit
 class DonovanViewController: UIViewController {
 
     @IBOutlet weak var History: UIWebView!
+    @IBOutlet weak var titleText: UINavigationItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
