@@ -11,7 +11,7 @@ import Firebase
 class EnrollViewController: UIViewController {
 
     @IBOutlet weak var Photos: UIWebView!
-    @IBOutlet weak var loader: UIActivityIndicatorView!
+    @IBOutlet weak var titleText: UINavigationItem!
     
     @IBAction func RefreshButton(_ sender: Any) {
         setupRemoteConfigDefaults()
@@ -24,14 +24,6 @@ class EnrollViewController: UIViewController {
         let SouthEvents = RemoteConfig.remoteConfig().configValue(forKey: "VolunteerEnroll").stringValue ?? ""
         let url = URL(string: "\(SouthEvents)")
         Photos.loadRequest(URLRequest(url: url!))
-        if Photos.isLoading == true {
-            loader.startAnimating()
-            loader.isHidden = false
-        }
-        if Photos.isLoading == false {
-            loader.stopAnimating()
-            loader.isHidden = true
-        }
     }
     func setupRemoteConfigDefaults(){
         let defaultValues = [
