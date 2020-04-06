@@ -10,6 +10,7 @@ import UIKit
 
 class PhotosViewController: UIViewController {
 
+    @IBOutlet weak var titleText: UINavigationItem!
     @IBOutlet weak var Photos: UIWebView!
     
     override func viewDidLoad() {
@@ -18,7 +19,6 @@ class PhotosViewController: UIViewController {
         Photos.loadRequest(URLRequest(url: url!))
     }
     
-    //Ads Show
     @IBAction func doSomething(_ sender: AnyObject) {
         Photos.reload()
     }
