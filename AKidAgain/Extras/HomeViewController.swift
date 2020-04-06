@@ -11,36 +11,46 @@ import Firebase
 import FirebaseAuth
 class HomeViewController: UIViewController {
     
+    let password = UserDefaults.standard.string(forKey: "UserPassword")
+    let email = UserDefaults.standard.string(forKey: "UserEmail")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if UserDefaults.standard.bool(forKey: "Intro_App") == true {
             let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "Welcome") as! WelcomeViewController
             self.navigationController?.pushViewController(homeVc, animated: false)
-        }
-        
-        Auth.auth().signIn(withEmail: UserDefaults.standard.string(forKey: "UserEmail")!, password: UserDefaults.standard.string(forKey: "UserPassword")!) { (user, error) in
-            if user != nil{
-                //They are in :)
-            } else {
-                //Log them out
-                UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
-                UserDefaults.standard.set(true, forKey: "Database")
-                let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "OpenScene") as! OpenSceneViewController
-                self.navigationController?.pushViewController(homeVc, animated: false)
-                //Alert Function
-                let defaultAction = UIAlertAction(title: "OK",
-                                     style: .default) { (action) in
+        } else {
+            Auth.auth().signIn(withEmail: email!, password: password!) { (user, error) in
+                if let error = error {
+                    Crashlytics.crashlytics().record(error: error)
                 }
-                let alert = UIAlertController(title: "Error 401",
-                      message: "There was a problem connecting you to our servers. Please try again.",
-                      preferredStyle: .alert)
-                alert.addAction(defaultAction)
-                 
-                self.present(alert, animated: true) {
-                    // The alert was presented
-                 }
-            }}
+                if user != nil {
+                    //They are in :)
+                } else {
+                    
+                    //Log them out
+                    UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
+                    UserDefaults.standard.set(true, forKey: "Database")
+                    let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "OpenScene") as! OpenSceneViewController
+                    self.navigationController?.pushViewController(homeVc, animated: false)
+                    
+                    //Alert Function
+                    let defaultAction = UIAlertAction(title: "OK",
+                                         style: .default) { (action) in
+                    }
+                    
+                    let alert = UIAlertController(title: "Error 401",
+                          message: "There was a problem connecting you to our servers. Please try again.",
+                          preferredStyle: .alert)
+                    alert.addAction(defaultAction)
+                     
+                    self.present(alert, animated: true) {
+                        // The alert was presented
+                    }
+                }
+            }
+        }
     }
     
     @IBAction func doSomething(_ sender: AnyObject) {
