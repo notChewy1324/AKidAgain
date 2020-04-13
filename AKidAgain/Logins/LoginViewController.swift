@@ -24,8 +24,8 @@ class LoginViewController: UIViewController, GADInterstitialDelegate {
         Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in
             if user != nil{
                 //Login in Successful
-                if interstitial.isReady {
-                    interstitial.present(fromRootViewController: self)
+                if self.interstitial.isReady {
+                    self.interstitial.present(fromRootViewController: self)
                 } else {
                   //Do nothin
                 }
@@ -39,8 +39,8 @@ class LoginViewController: UIViewController, GADInterstitialDelegate {
                 }
             }else{
                 //Login in Failed
-                if interstitial.isReady {
-                    interstitial.present(fromRootViewController: self)
+                if self.interstitial.isReady {
+                    self.interstitial.present(fromRootViewController: self)
                 } else {
                   //Do nothin
                 }
