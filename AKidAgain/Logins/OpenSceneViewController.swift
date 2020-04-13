@@ -42,8 +42,6 @@ class OpenSceneViewController: UIViewController {
         setupRemoteConfigDefaults()
         fecthRemoteConfig()
         updateViewWithRCValues()
-        // MARK: -Fix Before Publish
-        UserDefaults.standard.setValue(false, forKey: "AppBlockerScreen")
         if UserDefaults.standard.bool(forKey: "AppBlockerScreen") == true {
             let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "AppBlocker") as! AppBlockerViewController
             self.navigationController?.pushViewController(homeVc, animated: false)
