@@ -20,6 +20,7 @@ import FirebaseRemoteConfig
 import FirebaseAuth
 import FirebaseCrashlytics
 import IQKeyboardManagerSwift
+import GoogleMobileAds
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -27,22 +28,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool  {
             
-            //Firebase
-            FirebaseApp.configure()
-        
-                // Notifications
-                UNUserNotificationCenter.current().delegate = self as? UNUserNotificationCenterDelegate
-                
-                let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-                UNUserNotificationCenter.current().requestAuthorization(
-                    options: authOptions,
-                    completionHandler: { _,_  in })
-        
-            application.registerForRemoteNotifications()
-        
-            IQKeyboardManager.shared.enable = true
+        //Firebase
+        FirebaseApp.configure()
+    
+            // Notifications
+            UNUserNotificationCenter.current().delegate = self as? UNUserNotificationCenterDelegate
             
-            return true
+            let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+            UNUserNotificationCenter.current().requestAuthorization(
+                options: authOptions,
+                completionHandler: { _,_  in })
+    
+        application.registerForRemoteNotifications()
+    
+        IQKeyboardManager.shared.enable = true
+        
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
+            
+        return true
 
     }
 
