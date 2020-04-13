@@ -16,4 +16,5 @@ pod 'Firebase'
 pod 'FirebaseInAppMessaging'
 pod 'Firebase/Analytics'
 pod 'IQKeyboardManagerSwift'
+pod 'Google-Mobile-Ads-SDK'
 end
