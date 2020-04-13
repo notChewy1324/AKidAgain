@@ -10,6 +10,9 @@
 		F7068A472344184D00FAB6CC /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7068A452344184D00FAB6CC /* CoreAudioKit.framework */; };
 		F7068A482344184D00FAB6CC /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7068A462344184D00FAB6CC /* CoreAudio.framework */; };
 		F7086C862347E90F0027615E /* GlobalFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7086C852347E90F0027615E /* GlobalFuncs.swift */; };
+		F72295F12444F619001593AD /* NorthernChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72295F02444F619001593AD /* NorthernChapterViewController.swift */; };
+		F72295F32444F63E001593AD /* CentralChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72295F22444F63E001593AD /* CentralChapterViewController.swift */; };
+		F72295F52444F64D001593AD /* SouthernChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72295F42444F64D001593AD /* SouthernChapterViewController.swift */; };
 		F76A2F7D2337E1AA0021B089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76A2F7C2337E1AA0021B089 /* AppDelegate.swift */; };
 		F76A2F842337E1AA0021B089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76A2F822337E1AA0021B089 /* Main.storyboard */; };
 		F76A2F862337E1AB0021B089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76A2F852337E1AB0021B089 /* Assets.xcassets */; };
@@ -78,6 +81,9 @@
 		F7068A452344184D00FAB6CC /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		F7068A462344184D00FAB6CC /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		F7086C852347E90F0027615E /* GlobalFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFuncs.swift; sourceTree = "<group>"; };
+		F72295F02444F619001593AD /* NorthernChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthernChapterViewController.swift; sourceTree = "<group>"; };
+		F72295F22444F63E001593AD /* CentralChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralChapterViewController.swift; sourceTree = "<group>"; };
+		F72295F42444F64D001593AD /* SouthernChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthernChapterViewController.swift; sourceTree = "<group>"; };
 		F734A18723721B27004FDF50 /* AirpushSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AirpushSDK; path = ../../Downloads/Airpush_SDKX_1.1/AirpushSDK; sourceTree = "<group>"; };
 		F734A18A23721C84004FDF50 /* APSDKLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = APSDKLib.a; path = ../../Downloads/Airpush_SDKX_1.1/AirpushSDK/APSDKLib.a; sourceTree = "<group>"; };
 		F76A2F792337E1AA0021B089 /* AKidAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKidAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,7 +136,7 @@
 		F7D7FBD5233EC6AA006D7BA1 /* VolunteerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VolunteerViewController.swift; path = ../Community/VolunteerViewController.swift; sourceTree = "<group>"; };
 		F7D7FBD6233EC6AA006D7BA1 /* StorriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StorriesViewController.swift; path = ../Community/StorriesViewController.swift; sourceTree = "<group>"; };
 		F7D7FBD7233EC6AA006D7BA1 /* EnrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnrollViewController.swift; path = ../Community/EnrollViewController.swift; sourceTree = "<group>"; };
-		F7D7FBDC233EC6D6006D7BA1 /* OhioChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OhioChaptersViewController.swift; path = ../Events/OhioChaptersViewController.swift; sourceTree = "<group>"; };
+		F7D7FBDC233EC6D6006D7BA1 /* OhioChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OhioChaptersViewController.swift; sourceTree = "<group>"; };
 		F7D7FBDD233EC6D7006D7BA1 /* IndianaChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IndianaChaptersViewController.swift; path = ../Events/IndianaChaptersViewController.swift; sourceTree = "<group>"; };
 		F7D7FBDE233EC6D7006D7BA1 /* StateSelectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateSelectionsViewController.swift; path = ../Events/StateSelectionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +171,17 @@
 				9DDEB8B1675D3DAE644DF768 /* Pods-Quote.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F72295F62444F657001593AD /* OhioChapters */ = {
+			isa = PBXGroup;
+			children = (
+				F7D7FBDC233EC6D6006D7BA1 /* OhioChaptersViewController.swift */,
+				F72295F02444F619001593AD /* NorthernChapterViewController.swift */,
+				F72295F22444F63E001593AD /* CentralChapterViewController.swift */,
+				F72295F42444F64D001593AD /* SouthernChapterViewController.swift */,
+			);
+			path = OhioChapters;
 			sourceTree = "<group>";
 		};
 		F76A2F702337E1AA0021B089 = {
@@ -298,7 +315,7 @@
 			children = (
 				F7D7FBDD233EC6D7006D7BA1 /* IndianaChaptersViewController.swift */,
 				F7D4D7F72341427300723D33 /* PhiladelphiaChapterViewController.swift */,
-				F7D7FBDC233EC6D6006D7BA1 /* OhioChaptersViewController.swift */,
+				F72295F62444F657001593AD /* OhioChapters */,
 				F7D7FBDE233EC6D7006D7BA1 /* StateSelectionsViewController.swift */,
 			);
 			path = Events;
@@ -456,7 +473,9 @@
 				F7D7FBAA233EC4CA006D7BA1 /* LoginViewController.swift in Sources */,
 				F7D7FBE1233EC6D7006D7BA1 /* IndianaChaptersViewController.swift in Sources */,
 				F7D7FBB6233EC525006D7BA1 /* HistoryViewController.swift in Sources */,
+				F72295F12444F619001593AD /* NorthernChapterViewController.swift in Sources */,
 				F7D7FBB2233EC525006D7BA1 /* DailyQuoteViewController.swift in Sources */,
+				F72295F32444F63E001593AD /* CentralChapterViewController.swift in Sources */,
 				F7A0BC40233FA0E100CCD923 /* DonovanViewController.swift in Sources */,
 				F7D7FBB8233EC525006D7BA1 /* HomeViewController.swift in Sources */,
 				F7D7FBDF233EC6D7006D7BA1 /* OhioChaptersViewController.swift in Sources */,
@@ -478,6 +497,7 @@
 				F7086C862347E90F0027615E /* GlobalFuncs.swift in Sources */,
 				F7D7FBCC233EC60D006D7BA1 /* GetStartedViewController.swift in Sources */,
 				F7D7FBC9233EC60D006D7BA1 /* DesignViewController.swift in Sources */,
+				F72295F52444F64D001593AD /* SouthernChapterViewController.swift in Sources */,
 				F7D7FBB7233EC525006D7BA1 /* MainSectionsViewController.swift in Sources */,
 				F7D7FBD8233EC6AB006D7BA1 /* VolunteerViewController.swift in Sources */,
 				F7D7FBD9233EC6AB006D7BA1 /* StorriesViewController.swift in Sources */,
@@ -624,7 +644,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 91668F8D911CB9081A1D9191 /* Pods-AKidAgain.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AKidAgain/AKidAgain.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -641,7 +661,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.0;
+				MARKETING_VERSION = 5.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.NotChewy1324.AKidAgain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -653,7 +673,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1504823D37A1D32C6F62C450 /* Pods-AKidAgain.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AKidAgain/AKidAgain.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -670,7 +690,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.0;
+				MARKETING_VERSION = 5.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.NotChewy1324.AKidAgain;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
