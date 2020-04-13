@@ -9,13 +9,26 @@
 import UIKit
 import Firebase
 import FirebaseAuth
-class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
+import GoogleMobileAds
+import FirebaseCrashlytics
+class ResetPasswordViewController: UIViewController, UITextFieldDelegate, GADInterstitialDelegate {
 
     @IBOutlet weak var emailbox: UITextField!
     @IBOutlet weak var display: UILabel!
+    var interstitial: GADInterstitial!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailbox.delegate = self
+        
+        //MARK: -FIX ME
+        //Real Ads: ca-app-pub-4600989320659230/6809684574
+        //Test Ads: ca-app-pub-3940256099942544/4411468910
+        self.interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        self.interstitial.delegate = self
+        
+        let request = GADRequest()
+        self.interstitial.load(request)
+        
     }
 
     @IBAction func button(_ sender: Any) {
@@ -25,9 +38,19 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
                 if error != nil {
                     //error -- did not send email
                     self.display.text = "Error sending email to '\(email)'. Make sure it is a valid email address."
+                    if self.interstitial.isReady {
+                        self.interstitial.present(fromRootViewController: self)
+                    } else {
+                      //Do nothin
+                    }
                 } else {
                     //sent email
                     self.display.text = "The reset password email was succesfuly sent to '\(email)'. Make sure to check your inbox."
+                   if self.interstitial.isReady {
+                       self.interstitial.present(fromRootViewController: self)
+                   } else {
+                     //Do nothin
+                   }
                 }
             }
         }
@@ -35,14 +58,10 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func Sound(_ sender: Any) {
         ClickSound()
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        return true
+        if self.interstitial.isReady {
+            self.interstitial.present(fromRootViewController: self)
+        } else {
+          //Do nothin
+        }
     }
 }
