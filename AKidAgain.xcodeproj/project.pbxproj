@@ -21,6 +21,10 @@
 		F7A8000D2337E3B900730C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800072337E3B900730C75 /* AVFoundation.framework */; };
 		F7A8000F2337E3B900730C75 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800092337E3B900730C75 /* AudioToolbox.framework */; };
 		F7A9A9B123BD886900F866C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7A9A9B023BD886900F866C8 /* GoogleService-Info.plist */; };
+		F7AE82612444C70900C2F527 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AE825D2444C70900C2F527 /* GoogleUtilities.framework */; };
+		F7AE82632444C70A00C2F527 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AE825E2444C70900C2F527 /* GoogleAppMeasurement.framework */; };
+		F7AE82652444C70A00C2F527 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AE825F2444C70900C2F527 /* nanopb.framework */; };
+		F7AE82672444C70A00C2F527 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AE82602444C70900C2F527 /* GoogleMobileAds.framework */; };
 		F7D4D7F82341427300723D33 /* PhiladelphiaChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4D7F72341427300723D33 /* PhiladelphiaChapterViewController.swift */; };
 		F7D7FBA6233EC48E006D7BA1 /* OpenSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7FBA5233EC48E006D7BA1 /* OpenSceneViewController.swift */; };
 		F7D7FBA8233EC4C3006D7BA1 /* AppBlockerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7FBA7233EC4C3006D7BA1 /* AppBlockerViewController.swift */; };
@@ -49,21 +53,7 @@
 		F7D7FBE0233EC6D7006D7BA1 /* StateSelectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7FBDE233EC6D7006D7BA1 /* StateSelectionsViewController.swift */; };
 		F7D7FBE1233EC6D7006D7BA1 /* IndianaChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7FBDD233EC6D7006D7BA1 /* IndianaChaptersViewController.swift */; };
 		F7E5FA60233D8C55000C7C4C /* Pods_AKidAgain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541E921552AC1EFD627C6C1D /* Pods_AKidAgain.framework */; };
-		F7F42B73243A722800AF98FC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F76A2FB12337E3100021B089 /* NotificationCenter.framework */; };
-		F7F42B76243A722800AF98FC /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F42B75243A722800AF98FC /* TodayViewController.swift */; };
-		F7F42B79243A722800AF98FC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F42B77243A722800AF98FC /* MainInterface.storyboard */; };
-		F7F42B7D243A722800AF98FC /* A Kid Again Quote.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F7F42B72243A722800AF98FC /* A Kid Again Quote.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F7F42B7B243A722800AF98FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F76A2F712337E1AA0021B089 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F7F42B71243A722800AF98FC;
-			remoteInfo = "A Kid Again Quote";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F7F42B7E243A722800AF98FC /* Embed App Extensions */ = {
@@ -72,7 +62,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				F7F42B7D243A722800AF98FC /* A Kid Again Quote.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +109,10 @@
 		F7A800132337E3C600730C75 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = "GoogleMobileAdsSdkiOS-7.42.1/GoogleAppMeasurement.framework"; sourceTree = "<group>"; };
 		F7A8001C2337E3DD00730C75 /* AKidAgain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AKidAgain.entitlements; sourceTree = "<group>"; };
 		F7A9A9B023BD886900F866C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F7AE825D2444C70900C2F527 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-7.57.0/GoogleUtilities.framework"; sourceTree = "<group>"; };
+		F7AE825E2444C70900C2F527 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-7.57.0/GoogleAppMeasurement.framework"; sourceTree = "<group>"; };
+		F7AE825F2444C70900C2F527 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-7.57.0/nanopb.framework"; sourceTree = "<group>"; };
+		F7AE82602444C70900C2F527 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "../../Downloads/GoogleMobileAdsSdkiOS-7.57.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 		F7D4D7F72341427300723D33 /* PhiladelphiaChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhiladelphiaChapterViewController.swift; sourceTree = "<group>"; };
 		F7D7FBA5233EC48E006D7BA1 /* OpenSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSceneViewController.swift; sourceTree = "<group>"; };
 		F7D7FBA7233EC4C3006D7BA1 /* AppBlockerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBlockerViewController.swift; sourceTree = "<group>"; };
@@ -140,10 +133,6 @@
 		F7D7FBDC233EC6D6006D7BA1 /* OhioChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OhioChaptersViewController.swift; path = ../Events/OhioChaptersViewController.swift; sourceTree = "<group>"; };
 		F7D7FBDD233EC6D7006D7BA1 /* IndianaChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IndianaChaptersViewController.swift; path = ../Events/IndianaChaptersViewController.swift; sourceTree = "<group>"; };
 		F7D7FBDE233EC6D7006D7BA1 /* StateSelectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StateSelectionsViewController.swift; path = ../Events/StateSelectionsViewController.swift; sourceTree = "<group>"; };
-		F7F42B72243A722800AF98FC /* A Kid Again Quote.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "A Kid Again Quote.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7F42B75243A722800AF98FC /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		F7F42B78243A722800AF98FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		F7F42B7A243A722800AF98FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,18 +142,14 @@
 			files = (
 				F7E5FA60233D8C55000C7C4C /* Pods_AKidAgain.framework in Frameworks */,
 				F7A8000D2337E3B900730C75 /* AVFoundation.framework in Frameworks */,
+				F7AE82672444C70A00C2F527 /* GoogleMobileAds.framework in Frameworks */,
 				F7068A482344184D00FAB6CC /* CoreAudio.framework in Frameworks */,
 				F7A8000F2337E3B900730C75 /* AudioToolbox.framework in Frameworks */,
+				F7AE82652444C70A00C2F527 /* nanopb.framework in Frameworks */,
 				F7A0BC3C233F9E8200CCD923 /* AVKit.framework in Frameworks */,
 				F7068A472344184D00FAB6CC /* CoreAudioKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7F42B6F243A722800AF98FC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7F42B73243A722800AF98FC /* NotificationCenter.framework in Frameworks */,
+				F7AE82632444C70A00C2F527 /* GoogleAppMeasurement.framework in Frameworks */,
+				F7AE82612444C70900C2F527 /* GoogleUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				F76A2F7B2337E1AA0021B089 /* AKidAgain */,
-				F7F42B74243A722800AF98FC /* A Kid Again Quote */,
 				F76A2FB02337E3100021B089 /* Frameworks */,
 				F76A2F7A2337E1AA0021B089 /* Products */,
 				4083BE328196C67FAF1A1971 /* Pods */,
@@ -197,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				F76A2F792337E1AA0021B089 /* AKidAgain.app */,
-				F7F42B72243A722800AF98FC /* A Kid Again Quote.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,6 +210,10 @@
 		F76A2FB02337E3100021B089 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7AE825E2444C70900C2F527 /* GoogleAppMeasurement.framework */,
+				F7AE82602444C70900C2F527 /* GoogleMobileAds.framework */,
+				F7AE825D2444C70900C2F527 /* GoogleUtilities.framework */,
+				F7AE825F2444C70900C2F527 /* nanopb.framework */,
 				F734A18A23721C84004FDF50 /* APSDKLib.a */,
 				F734A18723721B27004FDF50 /* AirpushSDK */,
 				F7068A462344184D00FAB6CC /* CoreAudio.framework */,
@@ -327,16 +314,6 @@
 			path = Videos;
 			sourceTree = "<group>";
 		};
-		F7F42B74243A722800AF98FC /* A Kid Again Quote */ = {
-			isa = PBXGroup;
-			children = (
-				F7F42B75243A722800AF98FC /* TodayViewController.swift */,
-				F7F42B77243A722800AF98FC /* MainInterface.storyboard */,
-				F7F42B7A243A722800AF98FC /* Info.plist */,
-			);
-			path = "A Kid Again Quote";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -355,29 +332,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				F7F42B7C243A722800AF98FC /* PBXTargetDependency */,
 			);
 			name = AKidAgain;
 			productName = AKidAgain;
 			productReference = F76A2F792337E1AA0021B089 /* AKidAgain.app */;
 			productType = "com.apple.product-type.application";
-		};
-		F7F42B71243A722800AF98FC /* A Kid Again Quote */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F7F42B81243A722900AF98FC /* Build configuration list for PBXNativeTarget "A Kid Again Quote" */;
-			buildPhases = (
-				F7F42B6E243A722800AF98FC /* Sources */,
-				F7F42B6F243A722800AF98FC /* Frameworks */,
-				F7F42B70243A722800AF98FC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "A Kid Again Quote";
-			productName = "A Kid Again Quote";
-			productReference = F7F42B72243A722800AF98FC /* A Kid Again Quote.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -391,9 +350,6 @@
 				TargetAttributes = {
 					F76A2F782337E1AA0021B089 = {
 						CreatedOnToolsVersion = 11.0;
-					};
-					F7F42B71243A722800AF98FC = {
-						CreatedOnToolsVersion = 11.4;
 					};
 				};
 			};
@@ -411,7 +367,6 @@
 			projectRoot = "";
 			targets = (
 				F76A2F782337E1AA0021B089 /* AKidAgain */,
-				F7F42B71243A722800AF98FC /* A Kid Again Quote */,
 			);
 		};
 /* End PBXProject section */
@@ -428,14 +383,6 @@
 				F7D7FBC3233EC5D1006D7BA1 /* IntroVanishSounds.mp3 in Resources */,
 				F76A2F842337E1AA0021B089 /* Main.storyboard in Resources */,
 				F7A9A9B123BD886900F866C8 /* GoogleService-Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7F42B70243A722800AF98FC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7F42B79243A722800AF98FC /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,23 +484,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7F42B6E243A722800AF98FC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F7F42B76243A722800AF98FC /* TodayViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F7F42B7C243A722800AF98FC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F7F42B71243A722800AF98FC /* A Kid Again Quote */;
-			targetProxy = F7F42B7B243A722800AF98FC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F76A2F822337E1AA0021B089 /* Main.storyboard */ = {
@@ -570,14 +501,6 @@
 				F76A2F882337E1AB0021B089 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		F7F42B77243A722800AF98FC /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7F42B78243A722800AF98FC /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -755,46 +678,6 @@
 			};
 			name = Release;
 		};
-		F7F42B7F243A722800AF98FC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 98JPYSAE27;
-				INFOPLIST_FILE = "A Kid Again Quote/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.NotChewy1324.AKidAgain.A-Kid-Again-Quote";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		F7F42B80243A722800AF98FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 98JPYSAE27;
-				INFOPLIST_FILE = "A Kid Again Quote/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.NotChewy1324.AKidAgain.A-Kid-Again-Quote";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -812,15 +695,6 @@
 			buildConfigurations = (
 				F76A2F8E2337E1AB0021B089 /* Debug */,
 				F76A2F8F2337E1AB0021B089 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F7F42B81243A722900AF98FC /* Build configuration list for PBXNativeTarget "A Kid Again Quote" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F7F42B7F243A722800AF98FC /* Debug */,
-				F7F42B80243A722800AF98FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
