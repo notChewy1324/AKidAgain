@@ -9,13 +9,26 @@
 import UIKit
 import Firebase
 import FirebaseAuth
-class HomeViewController: UIViewController {
+import GoogleMobileAds
+import FirebaseCrashlytics
+
+class HomeViewController: UIViewController, GADInterstitialDelegate {
     
     let password = UserDefaults.standard.string(forKey: "UserPassword")
     let email = UserDefaults.standard.string(forKey: "UserEmail")
+    var interstitial: GADInterstitial!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //MARK: -FIX ME
+        //Real Ads: ca-app-pub-4600989320659230/6809684574
+        //Test Ads: ca-app-pub-3940256099942544/4411468910
+        self.interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        self.interstitial.delegate = self
+        
+        let request = GADRequest()
+        self.interstitial.load(request)
         
         if UserDefaults.standard.bool(forKey: "Intro_App") == true {
             let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "Welcome") as! WelcomeViewController
@@ -27,9 +40,24 @@ class HomeViewController: UIViewController {
                 }
                 if user != nil {
                     //They are in :)
+                    
+                    if self.interstitial.isReady {
+                        self.interstitial.present(fromRootViewController: self)
+                    } else {
+                      //Do nothin
+                    }
+                    
                 } else {
                     
                     //Log them out
+                    
+                   if self.interstitial.isReady {
+                       self.interstitial.present(fromRootViewController: self)
+                   } else {
+                     //Do nothin
+                   }
+                    
+                    
                     UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
                     UserDefaults.standard.set(true, forKey: "Database")
                     let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "OpenScene") as! OpenSceneViewController
@@ -55,5 +83,12 @@ class HomeViewController: UIViewController {
     
     @IBAction func doSomething(_ sender: AnyObject) {
         ClickSound()
+        
+        if self.interstitial.isReady {
+            self.interstitial.present(fromRootViewController: self)
+        } else {
+          //Do nothin
+        }
+        
     }
 }
