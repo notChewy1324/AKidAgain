@@ -8,9 +8,12 @@
 
 import UIKit
 import Firebase
-class AppBlockerViewController: UIViewController {
+import GoogleMobileAds
+import FirebaseCrashlytics
+class AppBlockerViewController: UIViewController, GADInterstitialDelegate {
 
     @IBOutlet weak var label: UILabel!
+    var interstitial: GADInterstitial!
     
     //remote-config
     func updateViewWithRCValues(){
@@ -40,9 +43,25 @@ class AppBlockerViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //MARK: -FIX ME
+        //Real Ads: ca-app-pub-4600989320659230/6809684574
+        //Test Ads: ca-app-pub-3940256099942544/4411468910
+        self.interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        self.interstitial.delegate = self
+        
+        let request = GADRequest()
+        self.interstitial.load(request)
+        
         setupRemoteConfigDefaults()
         fecthRemoteConfig()
         updateViewWithRCValues()
+        
+        if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
+        } else {
+          //Do nothin
+        }
     }
 
 }
