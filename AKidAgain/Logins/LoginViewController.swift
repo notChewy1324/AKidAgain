@@ -9,18 +9,26 @@
 import UIKit
 import Firebase
 import FirebaseAuth
-class LoginViewController: UIViewController {
+import GoogleMobileAds
+import FirebaseCrashlytics
+class LoginViewController: UIViewController, GADInterstitialDelegate {
 
     //Objects
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var TextErrorDisplay: UILabel!
+    var interstitial: GADInterstitial!
 
     @IBAction func LoginButton(_ sender: Any) {
         ClickSound()
         Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in
             if user != nil{
                 //Login in Successful
+                if interstitial.isReady {
+                    interstitial.present(fromRootViewController: self)
+                } else {
+                  //Do nothin
+                }
                 UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
                 UserDefaults.standard.set(self.email.text, forKey: "UserEmail")
                 UserDefaults.standard.set(self.password.text, forKey: "UserPassword")
@@ -31,6 +39,11 @@ class LoginViewController: UIViewController {
                 }
             }else{
                 //Login in Failed
+                if interstitial.isReady {
+                    interstitial.present(fromRootViewController: self)
+                } else {
+                  //Do nothin
+                }
                 UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1){
                 self.TextErrorDisplay.text = "Login failed due to Email or Password."
@@ -54,5 +67,13 @@ class LoginViewController: UIViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()
+        //MARK: -FIX ME
+        //Real Ads: ca-app-pub-4600989320659230/6809684574
+        //Test Ads: ca-app-pub-3940256099942544/4411468910
+        self.interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        self.interstitial.delegate = self
+        
+        let request = GADRequest()
+        self.interstitial.load(request)
     }
 }
