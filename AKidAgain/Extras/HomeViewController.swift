@@ -11,7 +11,6 @@ import Firebase
 import FirebaseAuth
 import GoogleMobileAds
 import FirebaseCrashlytics
-
 class HomeViewController: UIViewController, GADInterstitialDelegate {
     
     let password = UserDefaults.standard.string(forKey: "UserPassword")
@@ -24,11 +23,9 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
         //MARK: -FIX ME
         //Real Ads: ca-app-pub-4600989320659230/6809684574
         //Test Ads: ca-app-pub-3940256099942544/4411468910
-        self.interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
-        self.interstitial.delegate = self
-        
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
         let request = GADRequest()
-        self.interstitial.load(request)
+        interstitial.load(request)
         
         if UserDefaults.standard.bool(forKey: "Intro_App") == true {
             let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "Welcome") as! WelcomeViewController
@@ -53,10 +50,7 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
                     
                    if self.interstitial.isReady {
                        self.interstitial.present(fromRootViewController: self)
-                   } else {
-                     //Do nothin
                    }
-                    
                     
                     UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
                     UserDefaults.standard.set(true, forKey: "Database")
@@ -83,12 +77,8 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
     
     @IBAction func doSomething(_ sender: AnyObject) {
         ClickSound()
-        
-        if self.interstitial.isReady {
-            self.interstitial.present(fromRootViewController: self)
-        } else {
-          //Do nothin
+        if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
         }
-        
     }
 }
