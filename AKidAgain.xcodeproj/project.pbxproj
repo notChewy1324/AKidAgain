@@ -13,6 +13,7 @@
 		F72295F12444F619001593AD /* NorthernChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72295F02444F619001593AD /* NorthernChapterViewController.swift */; };
 		F72295F32444F63E001593AD /* CentralChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72295F22444F63E001593AD /* CentralChapterViewController.swift */; };
 		F72295F52444F64D001593AD /* SouthernChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72295F42444F64D001593AD /* SouthernChapterViewController.swift */; };
+		F731C1362447A5AE008FA754 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F731C1352447A5AE008FA754 /* IQKeyboardManagerSwift.framework */; };
 		F76A2F7D2337E1AA0021B089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76A2F7C2337E1AA0021B089 /* AppDelegate.swift */; };
 		F76A2F842337E1AA0021B089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76A2F822337E1AA0021B089 /* Main.storyboard */; };
 		F76A2F862337E1AB0021B089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76A2F852337E1AB0021B089 /* Assets.xcassets */; };
@@ -84,6 +85,7 @@
 		F72295F02444F619001593AD /* NorthernChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorthernChapterViewController.swift; sourceTree = "<group>"; };
 		F72295F22444F63E001593AD /* CentralChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralChapterViewController.swift; sourceTree = "<group>"; };
 		F72295F42444F64D001593AD /* SouthernChapterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthernChapterViewController.swift; sourceTree = "<group>"; };
+		F731C1352447A5AE008FA754 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F734A18723721B27004FDF50 /* AirpushSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AirpushSDK; path = ../../Downloads/Airpush_SDKX_1.1/AirpushSDK; sourceTree = "<group>"; };
 		F734A18A23721C84004FDF50 /* APSDKLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = APSDKLib.a; path = ../../Downloads/Airpush_SDKX_1.1/AirpushSDK/APSDKLib.a; sourceTree = "<group>"; };
 		F76A2F792337E1AA0021B089 /* AKidAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKidAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F731C1362447A5AE008FA754 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				F7E5FA60233D8C55000C7C4C /* Pods_AKidAgain.framework in Frameworks */,
 				F7A8000D2337E3B900730C75 /* AVFoundation.framework in Frameworks */,
 				F7AE82672444C70A00C2F527 /* GoogleMobileAds.framework in Frameworks */,
@@ -227,6 +230,7 @@
 		F76A2FB02337E3100021B089 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F731C1352447A5AE008FA754 /* IQKeyboardManagerSwift.framework */,
 				F7AE825E2444C70900C2F527 /* GoogleAppMeasurement.framework */,
 				F7AE82602444C70900C2F527 /* GoogleMobileAds.framework */,
 				F7AE825D2444C70900C2F527 /* GoogleUtilities.framework */,
@@ -644,7 +648,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 91668F8D911CB9081A1D9191 /* Pods-AKidAgain.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AKidAgain/AKidAgain.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -673,7 +676,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1504823D37A1D32C6F62C450 /* Pods-AKidAgain.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AKidAgain/AKidAgain.entitlements;
 				CODE_SIGN_STYLE = Automatic;
