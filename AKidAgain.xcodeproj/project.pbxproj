@@ -18,6 +18,7 @@
 		F76A2F842337E1AA0021B089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76A2F822337E1AA0021B089 /* Main.storyboard */; };
 		F76A2F862337E1AB0021B089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76A2F852337E1AB0021B089 /* Assets.xcassets */; };
 		F76A2F892337E1AB0021B089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76A2F872337E1AB0021B089 /* LaunchScreen.storyboard */; };
+		F78C0E31244A59780046F5EC /* userInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78C0E30244A59780046F5EC /* userInfo.swift */; };
 		F7A0BC3C233F9E8200CCD923 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800052337E3B900730C75 /* AVKit.framework */; };
 		F7A0BC40233FA0E100CCD923 /* DonovanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0BC3D233FA0E000CCD923 /* DonovanViewController.swift */; };
 		F7A0BC41233FA0E100CCD923 /* GrantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A0BC3E233FA0E000CCD923 /* GrantViewController.swift */; };
@@ -102,6 +103,7 @@
 		F76A2FA72337E26E0021B089 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		F76A2FA82337E26E0021B089 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F76A2FB12337E3100021B089 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		F78C0E30244A59780046F5EC /* userInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfo.swift; sourceTree = "<group>"; };
 		F7A0BC3D233FA0E000CCD923 /* DonovanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonovanViewController.swift; sourceTree = "<group>"; };
 		F7A0BC3E233FA0E000CCD923 /* GrantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrantViewController.swift; sourceTree = "<group>"; };
 		F7A0BC3F233FA0E100CCD923 /* MelodyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MelodyViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			children = (
 				F7A8001C2337E3DD00730C75 /* AKidAgain.entitlements */,
 				F76A2F7C2337E1AA0021B089 /* AppDelegate.swift */,
+				F78C0E30244A59780046F5EC /* userInfo.swift */,
 				F7086C852347E90F0027615E /* GlobalFuncs.swift */,
 				F7D7FBE9233EC707006D7BA1 /* Videos */,
 				F7D7FBC4233EC5D6006D7BA1 /* Sounds */,
@@ -473,6 +476,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F78C0E31244A59780046F5EC /* userInfo.swift in Sources */,
 				F7D7FBB5233EC525006D7BA1 /* PhotosViewController.swift in Sources */,
 				F7D7FBAA233EC4CA006D7BA1 /* LoginViewController.swift in Sources */,
 				F7D7FBE1233EC6D7006D7BA1 /* IndianaChaptersViewController.swift in Sources */,
