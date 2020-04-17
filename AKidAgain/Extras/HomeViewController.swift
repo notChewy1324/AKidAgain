@@ -43,7 +43,6 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
                     } else {
                       //Do nothin
                     }
-                    userData()
                     
                 } else {
                     
