@@ -29,7 +29,6 @@ class LoginViewController: UIViewController, GADInterstitialDelegate {
                 } else {
                   //Do nothin
                 }
-                userData()
                 UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
                 UserDefaults.standard.set(self.email.text, forKey: "UserEmail")
                 UserDefaults.standard.set(self.password.text, forKey: "UserPassword")
