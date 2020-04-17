@@ -21,6 +21,7 @@ class SignUpViewController: UIViewController {
         Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (authResult, error) in
             if authResult != nil{
                 //Sign Up is Successful
+                userData()
                 self.TextErrorDisplay.text = "Sign up is successful"
                 UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
                 UserDefaults.standard.set(true, forKey: "Intro_App")
