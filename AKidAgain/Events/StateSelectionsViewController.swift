@@ -19,7 +19,6 @@ class StateSelectionsViewController: UIViewController {
 */
     override func viewDidLoad() {
         super.viewDidLoad()
-        userData()
         if UserDefaults.standard.bool(forKey: "Ohio") == true{
             let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "OhioChapters") as! OhioChaptersViewController
             self.navigationController?.pushViewController(homeVc, animated: false)
