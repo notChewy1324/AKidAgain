@@ -29,6 +29,7 @@ class LoginViewController: UIViewController, GADInterstitialDelegate {
                 } else {
                   //Do nothin
                 }
+                userData()
                 UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
                 UserDefaults.standard.set(self.email.text, forKey: "UserEmail")
                 UserDefaults.standard.set(self.password.text, forKey: "UserPassword")
@@ -51,6 +52,7 @@ class LoginViewController: UIViewController, GADInterstitialDelegate {
             }
             if self.email.text! == "demo@dev.com" , self.password.text! == "demo12345" {
                 //Login in Successful
+                userData()
                 UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
                 self.TextErrorDisplay.text = "Login Successful"
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2){
