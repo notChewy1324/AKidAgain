@@ -97,6 +97,8 @@ class SettingsViewController: UIViewController, GADInterstitialDelegate {
         let request = GADRequest()
         self.interstitial.load(request)
         
+        userData()
+        
         label.text = "You are currently signed in as \(UserDefaults.standard.string(forKey: "UserEmail")!)"
     }
 }
