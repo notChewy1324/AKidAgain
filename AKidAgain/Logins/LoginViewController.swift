@@ -51,8 +51,8 @@ class LoginViewController: UIViewController, GADInterstitialDelegate {
             }
             if self.email.text! == "demo@dev.com" , self.password.text! == "demo12345" {
                 //Login in Successful
-                userData()
                 UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
+                UserDefaults.standard.set(true, forKey: "Intro_App")
                 self.TextErrorDisplay.text = "Login Successful"
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2){
                     let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "Home") as! HomeViewController
