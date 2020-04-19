@@ -94,7 +94,7 @@ class SettingsViewController: UIViewController, GADInterstitialDelegate {
         //MARK: -FIX ME
         //Real Ads: ca-app-pub-4600989320659230/6809684574
         //Test Ads: ca-app-pub-3940256099942544/4411468910
-        self.interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        self.interstitial = GADInterstitial(adUnitID: "ca-app-pub-4600989320659230/6809684574")
         self.interstitial.delegate = self
         
         let request = GADRequest()
