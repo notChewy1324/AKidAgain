@@ -13,8 +13,9 @@ import GoogleMobileAds
 import FirebaseCrashlytics
 class HomeViewController: UIViewController, GADInterstitialDelegate {
     
-    let password = UserDefaults.standard.string(forKey: "UserPassword")
     let email = UserDefaults.standard.string(forKey: "UserEmail")
+    let password = UserDefaults.standard.string(forKey: "UserPassword")
+    let intro = UserDefaults.standard.bool(forKey: "Intro_App")
     var interstitial: GADInterstitial!
     
     override func viewDidLoad() {
@@ -23,11 +24,11 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
         //MARK: -FIX ME
         //Real Ads: ca-app-pub-4600989320659230/6809684574
         //Test Ads: ca-app-pub-3940256099942544/4411468910
-        interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-4600989320659230/6809684574")
         let request = GADRequest()
         interstitial.load(request)
         
-        if UserDefaults.standard.bool(forKey: "Intro_App") == true {
+        if (intro == true) {
             let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "Welcome") as! WelcomeViewController
             self.navigationController?.pushViewController(homeVc, animated: false)
         } else {
@@ -40,17 +41,13 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
                     userHelper_Tool()
                     if self.interstitial.isReady {
                         self.interstitial.present(fromRootViewController: self)
-                    } else {
-                      //Do nothin
                     }
                 } else {
                     //Log them out
-                    userHelper_Tool()
                    if self.interstitial.isReady {
                        self.interstitial.present(fromRootViewController: self)
                    }
                     UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
-                    UserDefaults.standard.set(true, forKey: "Database")
                     let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "OpenScene") as! OpenSceneViewController
                     self.navigationController?.pushViewController(homeVc, animated: false)
                     
