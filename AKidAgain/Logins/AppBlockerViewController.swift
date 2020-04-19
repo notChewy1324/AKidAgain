@@ -43,15 +43,12 @@ class AppBlockerViewController: UIViewController, GADInterstitialDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //MARK: -FIX ME
-        //Real Ads: ca-app-pub-4600989320659230/6809684574
-        //Test Ads: ca-app-pub-3940256099942544/4411468910
-        self.interstitial = GADInterstitial(adUnitID: "ca-app-pub-4600989320659230/6809684574")
-        self.interstitial.delegate = self
+
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-4600989320659230/6809684574")
+        interstitial.delegate = self
         
         let request = GADRequest()
-        self.interstitial.load(request)
+        interstitial.load(request)
         
         setupRemoteConfigDefaults()
         fecthRemoteConfig()
@@ -59,10 +56,8 @@ class AppBlockerViewController: UIViewController, GADInterstitialDelegate {
         
         userHelper_Tool()
         
-        if interstitial.isReady {
+        if (interstitial.isReady) {
             interstitial.present(fromRootViewController: self)
-        } else {
-          //Do nothin
         }
     }
 
