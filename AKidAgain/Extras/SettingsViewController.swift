@@ -19,6 +19,8 @@ class SettingsViewController: UIViewController, GADInterstitialDelegate {
     
     @IBAction func LogOut(_ sender: Any) {
         ClickSound()
+        UserDefaults.standard.set("No_User", forKey: "UserEmail")
+        UserDefaults.standard.set("No_User", forKey: "UserPassword")
         if interstitial.isReady {
             interstitial.present(fromRootViewController: self)
         } else {
@@ -51,8 +53,9 @@ class SettingsViewController: UIViewController, GADInterstitialDelegate {
         } else {
           //Do nothin
         }
+        UserDefaults.standard.set("No_User", forKey: "UserEmail")
+        UserDefaults.standard.set("No_User", forKey: "UserPassword")
         let user = Auth.auth().currentUser
-        
         user?.delete { error in
             if error != nil {
                 //Account failed to delete
