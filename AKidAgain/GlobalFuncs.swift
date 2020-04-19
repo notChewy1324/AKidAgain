@@ -20,6 +20,7 @@ func ClickSound() {
 
     do {
         audioPLayer = try AVAudioPlayer(contentsOf: url)
+        audioPLayer?.prepareToPlay()
         audioPLayer?.play()
     } catch {
     }
