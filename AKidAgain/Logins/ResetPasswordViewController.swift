@@ -29,6 +29,8 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate, GADInt
         let request = GADRequest()
         self.interstitial.load(request)
         
+        userHelper_Tool()
+        
     }
 
     @IBAction func button(_ sender: Any) {
