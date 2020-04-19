@@ -57,6 +57,8 @@ class AppBlockerViewController: UIViewController, GADInterstitialDelegate {
         fecthRemoteConfig()
         updateViewWithRCValues()
         
+        userHelper_Tool()
+        
         if interstitial.isReady {
             interstitial.present(fromRootViewController: self)
         } else {
