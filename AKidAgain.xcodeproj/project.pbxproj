@@ -13,7 +13,10 @@
 		F72295F12444F619001593AD /* NorthernChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72295F02444F619001593AD /* NorthernChapterViewController.swift */; };
 		F72295F32444F63E001593AD /* CentralChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72295F22444F63E001593AD /* CentralChapterViewController.swift */; };
 		F72295F52444F64D001593AD /* SouthernChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72295F42444F64D001593AD /* SouthernChapterViewController.swift */; };
-		F731C1362447A5AE008FA754 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F731C1352447A5AE008FA754 /* IQKeyboardManagerSwift.framework */; };
+		F73953C1244BBE0E00EEDF85 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73953BD244BBE0E00EEDF85 /* GoogleAppMeasurement.framework */; };
+		F73953C3244BBE0E00EEDF85 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73953BE244BBE0E00EEDF85 /* GoogleUtilities.framework */; };
+		F73953C5244BBE0F00EEDF85 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73953BF244BBE0E00EEDF85 /* GoogleMobileAds.framework */; };
+		F73953C7244BBE0F00EEDF85 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73953C0244BBE0E00EEDF85 /* nanopb.framework */; };
 		F76A2F7D2337E1AA0021B089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76A2F7C2337E1AA0021B089 /* AppDelegate.swift */; };
 		F76A2F842337E1AA0021B089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76A2F822337E1AA0021B089 /* Main.storyboard */; };
 		F76A2F862337E1AB0021B089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F76A2F852337E1AB0021B089 /* Assets.xcassets */; };
@@ -26,10 +29,6 @@
 		F7A8000D2337E3B900730C75 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800072337E3B900730C75 /* AVFoundation.framework */; };
 		F7A8000F2337E3B900730C75 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7A800092337E3B900730C75 /* AudioToolbox.framework */; };
 		F7A9A9B123BD886900F866C8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7A9A9B023BD886900F866C8 /* GoogleService-Info.plist */; };
-		F7AE82612444C70900C2F527 /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AE825D2444C70900C2F527 /* GoogleUtilities.framework */; };
-		F7AE82632444C70A00C2F527 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AE825E2444C70900C2F527 /* GoogleAppMeasurement.framework */; };
-		F7AE82652444C70A00C2F527 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AE825F2444C70900C2F527 /* nanopb.framework */; };
-		F7AE82672444C70A00C2F527 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AE82602444C70900C2F527 /* GoogleMobileAds.framework */; };
 		F7D4D7F82341427300723D33 /* PhiladelphiaChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D4D7F72341427300723D33 /* PhiladelphiaChapterViewController.swift */; };
 		F7D7FBA6233EC48E006D7BA1 /* OpenSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7FBA5233EC48E006D7BA1 /* OpenSceneViewController.swift */; };
 		F7D7FBA8233EC4C3006D7BA1 /* AppBlockerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7FBA7233EC4C3006D7BA1 /* AppBlockerViewController.swift */; };
@@ -89,6 +88,11 @@
 		F731C1352447A5AE008FA754 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManagerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F734A18723721B27004FDF50 /* AirpushSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AirpushSDK; path = ../../Downloads/Airpush_SDKX_1.1/AirpushSDK; sourceTree = "<group>"; };
 		F734A18A23721C84004FDF50 /* APSDKLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = APSDKLib.a; path = ../../Downloads/Airpush_SDKX_1.1/AirpushSDK/APSDKLib.a; sourceTree = "<group>"; };
+		F73953BC244BBE0000EEDF85 /* GoogleMobileAdsSdkiOS-7.57.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "GoogleMobileAdsSdkiOS-7.57.0"; sourceTree = "<group>"; };
+		F73953BD244BBE0E00EEDF85 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = "GoogleMobileAdsSdkiOS-7.57.0/GoogleAppMeasurement.framework"; sourceTree = "<group>"; };
+		F73953BE244BBE0E00EEDF85 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = "GoogleMobileAdsSdkiOS-7.57.0/GoogleUtilities.framework"; sourceTree = "<group>"; };
+		F73953BF244BBE0E00EEDF85 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.57.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		F73953C0244BBE0E00EEDF85 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = "GoogleMobileAdsSdkiOS-7.57.0/nanopb.framework"; sourceTree = "<group>"; };
 		F76A2F792337E1AA0021B089 /* AKidAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AKidAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76A2F7C2337E1AA0021B089 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F76A2F832337E1AA0021B089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -150,17 +154,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F731C1362447A5AE008FA754 /* IQKeyboardManagerSwift.framework in Frameworks */,
+				F73953C5244BBE0F00EEDF85 /* GoogleMobileAds.framework in Frameworks */,
 				F7E5FA60233D8C55000C7C4C /* Pods_AKidAgain.framework in Frameworks */,
+				F73953C7244BBE0F00EEDF85 /* nanopb.framework in Frameworks */,
 				F7A8000D2337E3B900730C75 /* AVFoundation.framework in Frameworks */,
-				F7AE82672444C70A00C2F527 /* GoogleMobileAds.framework in Frameworks */,
 				F7068A482344184D00FAB6CC /* CoreAudio.framework in Frameworks */,
 				F7A8000F2337E3B900730C75 /* AudioToolbox.framework in Frameworks */,
-				F7AE82652444C70A00C2F527 /* nanopb.framework in Frameworks */,
+				F73953C1244BBE0E00EEDF85 /* GoogleAppMeasurement.framework in Frameworks */,
 				F7A0BC3C233F9E8200CCD923 /* AVKit.framework in Frameworks */,
+				F73953C3244BBE0E00EEDF85 /* GoogleUtilities.framework in Frameworks */,
 				F7068A472344184D00FAB6CC /* CoreAudioKit.framework in Frameworks */,
-				F7AE82632444C70A00C2F527 /* GoogleAppMeasurement.framework in Frameworks */,
-				F7AE82612444C70900C2F527 /* GoogleUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +236,11 @@
 		F76A2FB02337E3100021B089 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F73953BD244BBE0E00EEDF85 /* GoogleAppMeasurement.framework */,
+				F73953BF244BBE0E00EEDF85 /* GoogleMobileAds.framework */,
+				F73953BE244BBE0E00EEDF85 /* GoogleUtilities.framework */,
+				F73953C0244BBE0E00EEDF85 /* nanopb.framework */,
+				F73953BC244BBE0000EEDF85 /* GoogleMobileAdsSdkiOS-7.57.0 */,
 				F731C1352447A5AE008FA754 /* IQKeyboardManagerSwift.framework */,
 				F7AE825E2444C70900C2F527 /* GoogleAppMeasurement.framework */,
 				F7AE82602444C70900C2F527 /* GoogleMobileAds.framework */,
@@ -567,7 +575,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -661,6 +669,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.42.1",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.57.0",
 				);
 				INFOPLIST_FILE = AKidAgain/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -689,6 +698,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.42.1",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdkiOS-7.57.0",
 				);
 				INFOPLIST_FILE = AKidAgain/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
