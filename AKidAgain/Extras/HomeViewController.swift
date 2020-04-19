@@ -37,21 +37,18 @@ class HomeViewController: UIViewController, GADInterstitialDelegate {
                 }
                 if user != nil {
                     //They are in :)
-                    
+                    userHelper_Tool()
                     if self.interstitial.isReady {
                         self.interstitial.present(fromRootViewController: self)
                     } else {
                       //Do nothin
                     }
-                    
                 } else {
-                    
                     //Log them out
-                    
+                    userHelper_Tool()
                    if self.interstitial.isReady {
                        self.interstitial.present(fromRootViewController: self)
                    }
-                    
                     UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
                     UserDefaults.standard.set(true, forKey: "Database")
                     let homeVc = self.storyboard?.instantiateViewController(withIdentifier: "OpenScene") as! OpenSceneViewController
