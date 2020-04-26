@@ -8,35 +8,16 @@
 
 import UIKit
 import Firebase
-import GoogleMobileAds
 import FirebaseCrashlytics
-class EnrollViewController: UIViewController, GADInterstitialDelegate {
+class EnrollViewController: UIViewController {
 
     @IBOutlet weak var Photos: UIWebView!
     @IBOutlet weak var titleText: UINavigationItem!
-    var interstitial: GADInterstitial!
     
     @IBAction func RefreshButton(_ sender: Any) {
-        
-        //MARK: -FIX ME
-        //Real Ads: ca-app-pub-4600989320659230/6809684574
-        //Test Ads: ca-app-pub-3940256099942544/4411468910
-        self.interstitial = GADInterstitial(adUnitID: "ca-app-pub-4600989320659230/6809684574")
-        self.interstitial.delegate = self
-        
-        let request = GADRequest()
-        self.interstitial.load(request)
-        
         setupRemoteConfigDefaults()
         fecthRemoteConfig()
         updateViewWithRCValues()
-        
-        if self.interstitial.isReady {
-            self.interstitial.present(fromRootViewController: self)
-        } else {
-          //Do nothin
-        }
-
     }
     
     //remote-config
@@ -65,25 +46,8 @@ class EnrollViewController: UIViewController, GADInterstitialDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //MARK: -FIX ME
-        //Real Ads: ca-app-pub-4600989320659230/6809684574
-        //Test Ads: ca-app-pub-3940256099942544/4411468910
-        self.interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
-        self.interstitial.delegate = self
-        
-        let request = GADRequest()
-        self.interstitial.load(request)
-        
         setupRemoteConfigDefaults()
         fecthRemoteConfig()
         updateViewWithRCValues()
-        
-        if self.interstitial.isReady {
-            self.interstitial.present(fromRootViewController: self)
-        } else {
-          //Do nothin
-        }
-        
     }
 }

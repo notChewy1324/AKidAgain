@@ -9,28 +9,16 @@
 import UIKit
 import Firebase
 import FirebaseAuth
-import GoogleMobileAds
 import FirebaseCrashlytics
-class ResetPasswordViewController: UIViewController, UITextFieldDelegate, GADInterstitialDelegate {
+class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailbox: UITextField!
     @IBOutlet weak var display: UILabel!
     var interstitial: GADInterstitial!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        //MARK: -FIX ME
-        //Real Ads: ca-app-pub-4600989320659230/6809684574
-        //Test Ads: ca-app-pub-3940256099942544/4411468910
-        self.interstitial = GADInterstitial(adUnitID: "ca-app-pub-4600989320659230/6809684574")
-        self.interstitial.delegate = self
-        
-        let request = GADRequest()
-        self.interstitial.load(request)
-        
+        super.viewDidLoad() 
         userHelper_Tool()
-        
     }
 
     @IBAction func button(_ sender: Any) {
@@ -60,10 +48,5 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate, GADInt
     
     @IBAction func Sound(_ sender: Any) {
         ClickSound()
-        if self.interstitial.isReady {
-            self.interstitial.present(fromRootViewController: self)
-        } else {
-          //Do nothin
-        }
     }
 }

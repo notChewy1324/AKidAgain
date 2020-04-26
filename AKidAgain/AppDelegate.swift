@@ -20,7 +20,6 @@ import FirebaseRemoteConfig
 import FirebaseAuth
 import FirebaseCrashlytics
 import IQKeyboardManagerSwift
-import GoogleMobileAds
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -42,8 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerForRemoteNotifications()
     
         IQKeyboardManager.shared.enable = true
-        
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
             
         return true
 
