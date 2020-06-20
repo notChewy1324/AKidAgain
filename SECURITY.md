@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-Newer versions will be supported while older version get phased out.
+Newer versions will be supported while older versions get phased out.
 
 | Version | Supported          |
 | ------- | ------------------ |
