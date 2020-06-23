@@ -14,11 +14,9 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailbox: UITextField!
     @IBOutlet weak var display: UILabel!
-    var interstitial: GADInterstitial!
     
     override func viewDidLoad() {
-        super.viewDidLoad() 
-        userHelper_Tool()
+        super.viewDidLoad()
     }
 
     @IBAction func button(_ sender: Any) {
@@ -28,19 +26,10 @@ class ResetPasswordViewController: UIViewController, UITextFieldDelegate {
                 if error != nil {
                     //error -- did not send email
                     self.display.text = "Error sending email to '\(email)'. Make sure it is a valid email address."
-                    if self.interstitial.isReady {
-                        self.interstitial.present(fromRootViewController: self)
-                    } else {
-                      //Do nothin
-                    }
+
                 } else {
                     //sent email
                     self.display.text = "The reset password email was succesfuly sent to '\(email)'. Make sure to check your inbox."
-                   if self.interstitial.isReady {
-                       self.interstitial.present(fromRootViewController: self)
-                   } else {
-                     //Do nothin
-                   }
                 }
             }
         }

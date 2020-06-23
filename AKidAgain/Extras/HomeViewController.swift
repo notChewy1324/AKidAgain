@@ -29,7 +29,6 @@ class HomeViewController: UIViewController {
                 }
                 if user != nil {
                     //They are in :)
-                    userHelper_Tool()
                 } else {
                     //Log them out
                     UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")

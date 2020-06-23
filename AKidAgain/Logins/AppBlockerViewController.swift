@@ -46,7 +46,6 @@ class AppBlockerViewController: UIViewController {
         fecthRemoteConfig()
         updateViewWithRCValues()
         
-        userHelper_Tool()
     }
 
 }
