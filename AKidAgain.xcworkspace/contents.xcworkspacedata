@@ -7,4 +7,171 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:AKidAgain"
+      name = "AKidAgain">
+      <FileRef
+         location = "group:AKidAgain/AKidAgain.entitlements">
+      </FileRef>
+      <FileRef
+         location = "group:AKidAgain/AppDelegate.swift">
+      </FileRef>
+      <FileRef
+         location = "group:AKidAgain/GlobalFuncs.swift">
+      </FileRef>
+      <Group
+         location = "group:AKidAgain/Videos"
+         name = "Videos">
+         <FileRef
+            location = "group:AKidAgain/Videos/DonovanViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Videos/GrantViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Videos/MelodyViewController.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:AKidAgain/Sounds"
+         name = "Sounds">
+         <FileRef
+            location = "group:AKidAgain/Sounds/Click_Sound.mp3">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Sounds/../Sounds/BG_Music.mp3">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Sounds/../Sounds/IntroVanishSounds.mp3">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:AKidAgain/Events"
+         name = "Events">
+         <FileRef
+            location = "group:AKidAgain/Events/../Events/IndianaChaptersViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Events/PhiladelphiaChapterViewController.swift">
+         </FileRef>
+         <Group
+            location = "group:AKidAgain/Events/OhioChapters"
+            name = "OhioChapters">
+            <FileRef
+               location = "group:AKidAgain/Events/OhioChapters/OhioChaptersViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:AKidAgain/Events/OhioChapters/NorthernChapterViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:AKidAgain/Events/OhioChapters/CentralChapterViewController.swift">
+            </FileRef>
+            <FileRef
+               location = "group:AKidAgain/Events/OhioChapters/SouthernChapterViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:AKidAgain/Events/../Events/StateSelectionsViewController.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:AKidAgain/Extras"
+         name = "Extras">
+         <FileRef
+            location = "group:AKidAgain/Extras/HomeViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Extras/MainSectionsViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Extras/PhotosViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Extras/DailyQuoteViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Extras/VideoViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Extras/HistoryViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Extras/SettingsViewController.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:AKidAgain/Community"
+         name = "Community">
+         <FileRef
+            location = "group:AKidAgain/Community/../Community/EnrollViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Community/../Community/StorriesViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Community/../Community/VolunteerViewController.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:AKidAgain/Intro"
+         name = "Intro">
+         <FileRef
+            location = "group:AKidAgain/Intro/../Intro/WelcomeViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Intro/../Intro/DesignViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Intro/../Intro/GetStartedViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Intro/../Intro/UsefulViewController.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:AKidAgain/Logins"
+         name = "Logins">
+         <FileRef
+            location = "group:AKidAgain/Logins/LoginViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Logins/SignUpViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Logins/ResetPasswordViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Logins/OpenSceneViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Logins/MainViewController.swift">
+         </FileRef>
+         <FileRef
+            location = "group:AKidAgain/Logins/AppBlockerViewController.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:AKidAgain"
+         name = "Main.storyboard">
+         <FileRef
+            location = "group:AKidAgain/Base.lproj/Main.storyboard">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:AKidAgain/Assets.xcassets">
+      </FileRef>
+      <Group
+         location = "group:AKidAgain"
+         name = "LaunchScreen.storyboard">
+         <FileRef
+            location = "group:AKidAgain/Base.lproj/LaunchScreen.storyboard">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:AKidAgain/Info.plist">
+      </FileRef>
+      <FileRef
+         location = "group:AKidAgain/GoogleService-Info.plist">
+      </FileRef>
+   </Group>
 </Workspace>
