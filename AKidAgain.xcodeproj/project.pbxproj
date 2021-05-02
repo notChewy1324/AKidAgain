@@ -354,6 +354,7 @@
 				F76A2F772337E1AA0021B089 /* Resources */,
 				8EEF826B1D48E7B750DDEE25 /* [CP] Embed Pods Frameworks */,
 				F7F42B7E243A722800AF98FC /* Embed App Extensions */,
+				D65CC68DC62C27B02846459E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -452,6 +453,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AKidAgain/Pods-AKidAgain-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D65CC68DC62C27B02846459E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AKidAgain/Pods-AKidAgain-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AKidAgain/Pods-AKidAgain-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AKidAgain/Pods-AKidAgain-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
